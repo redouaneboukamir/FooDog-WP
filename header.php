@@ -38,4 +38,12 @@
                 </nav>
             </div>
         </div>
+        <?php 
+        $before = "<h1>";
+        $after = "</h1>";
+            while (have_posts()) : the_post();?>
+                
+                <?php the_title($before, $after); ?>
+                <div class="contenuArticle"><?php the_content($more, $aftermore) ?></div>
+           <?php endwhile; ?>
     </header>
