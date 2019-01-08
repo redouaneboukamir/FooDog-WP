@@ -14,12 +14,14 @@
 <body>
 <!-- search pop-up-->
 <div class="fooDog_pop_up">
-nvjdsnfjndjvlndsjnvjdnvjdsnvnjdnvjqdsn
+
 </div>
 <!-- page layout -->
 <div class="fooDog_social col-12">    
     <nav class="fooDog_socialNav debug">
-        <?php wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList debug')); ?>
+        <?php 
+        // wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList debug')); 
+        ?>
     </nav>
 </div>
 <div class="fooDog_content debug">
