@@ -6,6 +6,7 @@ Description: becode project's theme
 */
 //search pop-up
 .fooDog_pop_up{
+    z-index: 2;
     display: none;
     width:100%;
     height: 100%;
@@ -34,10 +35,6 @@ Description: becode project's theme
     }//.fooDog_socialNav
 }//.fooDog_social
 
-.fooDog_content{
-    max-width: 75%;
-    margin: auto;
-}
 
 .header{
     .fooDog_title{
@@ -49,11 +46,12 @@ Description: becode project's theme
     }//.fooDog_title
     .fooDog_main{
         .fooDog_mainNav{
+            width: 100%;
             .fooDog_mainNavList{
                 display: flex;
                 list-style: none;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: space-between;
                 margin:0;
                 padding:10px;
                 li{
