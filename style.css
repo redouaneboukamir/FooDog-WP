@@ -60,7 +60,7 @@ Description: becode project's theme
           justify-content: center;
 }
 
-.header .fooDog_main .fooDog_mainNav .fooDog_mainNavList {
+.header .fooDog_mainNav .fooDog_mainNavList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,13 +69,14 @@ Description: becode project's theme
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 10px;
 }
 
-.header .fooDog_main .fooDog_mainNav .fooDog_mainNavList li a {
+.header .fooDog_mainNav .fooDog_mainNavList li a {
   color: black;
 }
 /*# sourceMappingURL=style.css.map */

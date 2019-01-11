@@ -32,18 +32,39 @@
             </div>
         </div>
         <div class="row">
-            <div class="fooDog_main col-12">
-                <nav class="fooDog_mainNav">
+
+                <nav class="fooDog_mainNav col-12">
                     <?php wp_nav_menu(array('theme_location' => 'fooDog_mainNavList', 'menu_class' => 'fooDog_mainNavList')); ?>
                 </nav>
             </div>
-        </div>
+
         <?php 
         $before = "<h1>";
         $after = "</h1>";
-            while (have_posts()) : the_post();?>
                 
-                <?php the_title($before, $after); ?>
-                <div class="contenuArticle"><?php the_content($more, $aftermore) ?></div>
-           <?php endwhile; ?>
+            
+               $recentPosts = new WP_Query();
+               $sticky = get_option('sticky_posts');
+               $args = array(
+                   'posts_per_page' =>4,
+                   'orderby' => 'date',
+                   'order' => 'DESC',
+                   'post__in' => $sticky
+                   );
+                $recentPosts->query($args);
+                $i = 0;
+                   while ( $i < 4 && $recentPosts->have_posts() ) : $recentPosts->the_post();	
+                   $i++;
+                   ?>
+                   <div class="stickyPost">
+                
+                        <span class="categorySticky"><?php the_category();?> </span>
+                        <?php  the_title($before,$after);?>
+                        <?php the_content(); ?>
+
+               </div>
+              <?php endwhile;?>
+
     </header>
+
+  

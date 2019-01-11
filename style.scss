@@ -5,6 +5,8 @@ Author URI: http://foodog.com
 Description: becode project's theme
 */
 //search pop-up
+@import '_stickyPost';
+
 .fooDog_pop_up{
     display: none;
     width:100%;
@@ -47,22 +49,23 @@ Description: becode project's theme
             
         }//.fooDogName
     }//.fooDog_title
-    .fooDog_main{
         .fooDog_mainNav{
+ 
             .fooDog_mainNavList{
                 display: flex;
                 list-style: none;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: space-between;
                 margin:0;
                 padding:10px;
                 li{
+                    
                     a{
                         color:black;
                     }//.a
                 }//li
             }//.fooDog_mainNavList
         }//.fooDog_mainNav
-    }//.fooDog_main
+
 }//.header
 
