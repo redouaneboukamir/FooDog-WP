@@ -61,6 +61,31 @@ Description: becode project's theme
   text-transform: uppercase;
 }
 
+.contentStickyPost .stickyPost .contentArticleSticky .contentShare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky .contentShare .shareIcon {
+  border: 1px solid lightgray;
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky .contentShare .shareText {
+  padding-left: 5px;
+  color: lightgray;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
 .fooDog_pop_up {
   display: none;
   width: 100%;
