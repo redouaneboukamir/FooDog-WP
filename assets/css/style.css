@@ -36,8 +36,9 @@ Description: becode project's theme
   height: 100%;
 }
 
-.contentStickyPost .stickyPost .contentArticleSticky .titleSticky {
+.contentStickyPost .stickyPost .contentArticleSticky .categorySticky {
   text-transform: uppercase;
+  font-size: 0.8em;
 }
 
 .contentStickyPost .stickyPost .contentArticleSticky .categorySticky .post-categories {
@@ -53,7 +54,11 @@ Description: becode project's theme
 }
 
 .contentStickyPost .stickyPost .contentArticleSticky .categorySticky .post-categories li a {
-  color: orange;
+  color: #ff8d69;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky .titleSticky {
+  text-transform: uppercase;
 }
 
 .fooDog_pop_up {

@@ -1,3 +1,5 @@
+$couleurOrange : #ff8d69;
+
 .headerPost{
     h6{
         text-transform: uppercase;
@@ -26,23 +28,25 @@
         }
     }
     .contentArticleSticky{
-        .titleSticky{
-            text-transform: uppercase;
-        }
+        
         .categorySticky{
-            
+            text-transform: uppercase;
+            font-size: 0.8em;
             .post-categories{
                 padding-left: 0;
-                    display: flex;        
-                    list-style-type: none;
-                    li{
-                        padding-left: 5px;
-                        a{
-                            color: orange;
+                display: flex;        
+                list-style-type: none;
+                li{
+                    padding-left: 5px;
+                    a{
+                        color: $couleurOrange;
 
-                        }
                     }
                 }
+            }
+        }
+        .titleSticky{
+            text-transform: uppercase;
         }
     }
 }
