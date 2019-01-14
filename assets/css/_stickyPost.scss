@@ -1,0 +1,69 @@
+$couleurOrange : #ff8d69;
+
+.headerPost{
+    h6{
+        text-transform: uppercase;
+        padding-right: 0;
+    }
+    .borderHeaderPost{
+        background-color: lightgray;
+        height: 3px;
+        margin-top: 7px;
+    }
+}
+.contentStickyPost{
+    margin-top: 20px;
+    
+
+.stickyPost{
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    .imageSticky{
+        height: 200px;
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    .contentArticleSticky{
+        
+        .categorySticky{
+            text-transform: uppercase;
+            font-size: 0.8em;
+            .post-categories{
+                padding-left: 0;
+                display: flex;        
+                list-style-type: none;
+                li{
+                    padding-left: 5px;
+                    a{
+                        color: $couleurOrange;
+
+                    }
+                }
+            }
+        }
+        .titleSticky{
+            text-transform: uppercase;
+        }
+        .contentShare{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .shareIcon{
+                border: 1px solid lightgray;
+                padding: 7px 10px;
+                border-radius: 50%;
+            }
+            .shareText{
+                padding-left: 5px;
+                color: lightgray;
+                text-transform: uppercase;
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+}
