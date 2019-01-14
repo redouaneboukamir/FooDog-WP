@@ -12,6 +12,7 @@
 <!-- search pop-up-->
 <div class="fooDog_pop_up">
     <div class="fooDog_searchWindow">
+    ezvsdvdsvsdvdvsvsdvsdvsdvsdvsdv
     </div>
 </div>
 <!-- page layout -->
@@ -20,14 +21,15 @@
         <?php wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList')); ?>
     </nav>
 </div>
-    <header class="header col-12 col-sm-6 offset-sm-3 ">
+<div class="fooDog_content">
+    <header class="header">
         <div class="row">
             <div class="fooDog_title col-12">
                 <h1 class="fooDog_name"><?php bloginfo('name'); ?></h1>
             </div>
         </div>
         <div class="row">
-            <div class="fooDog_main">
+            <div class="fooDog_main col-12 ">
                 <nav class="fooDog_mainNav">
                     <?php wp_nav_menu(array('theme_location' => 'fooDog_mainNavList', 'menu_class' => 'fooDog_mainNavList')); ?>
                 </nav>
