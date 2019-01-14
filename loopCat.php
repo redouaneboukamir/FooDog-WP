@@ -8,18 +8,27 @@
 <!--Création des trois button et de la pub-->
 <div class="pubCat container-fluid">
     <div class="row">
-        <div class="col-12">
-            <a href="#" target="_blank" rel="noopener noreferrer">Fan</a>
+        <div class="linkPub col-12">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <div><i class="fab fa-facebook-f"></i></div>
+            </a>
         </div>
-        <div class="col-12">
-            <a href="#" target="_blank" rel="noopener noreferrer">Followers</a>
+        <div class="linkPub col-12">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <div><i class="fab fa-twitter"></i></div>
+            </a>
         </div>
-        <div class="col-12">
-            <a href="#" target="_blank" rel="noopener noreferrer">Followers</a>
+        <div class="linkPub col-12">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <div><i class="fab fa-instagram"></i></div>
+            </a>
         </div>
-    <img class="col-12" src="" alt="">
+        <div class="imgDivCat col-12">
+            <img src="https://www.santevet.com/upload/admin/images/article/tag/gamelle-chien.jpeg" alt="">
+        </div>
     </div>
 </div>
+
 <?php while (have_posts()): the_post();?>
 
 	<?php // augmentation du compteur à chaque boucle

@@ -33,13 +33,13 @@
 //Style Pour les trois buttons et la pub
 .pubCat{
     position : absolute;
-    top: 42%;
-    left: 62.5%;
+    top: 37%;
+    left: 61%;
     padding: 0;
-    width: 15%!important;
-    div{
-        background-color: rgb(107, 119, 173)!important;
+    width: 12.5%!important;
+    .linkPub{
         padding: 0.2vh 0;
+        background-color: rgb(107, 119, 173)!important;
         border-bottom: 0.2vh solid white;
         &:hover{
             background-color:rgb(170, 168, 199)!important;
@@ -51,7 +51,17 @@
             text-decoration: none!important;
         }
     }
+    .imgDivCat{
+        padding-top: 5vh;
+        background-color: white;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
 }
+
 ////////////////////////////////////
 //style pour le contenu des articles
 .postCatContainer{

@@ -31,27 +31,38 @@
 
 .pubCat {
   position: absolute;
-  top: 42%;
-  left: 62.5%;
+  top: 37%;
+  left: 61%;
   padding: 0;
-  width: 15% !important;
+  width: 12.5% !important;
 }
 
-.pubCat div {
-  background-color: #6b77ad !important;
+.pubCat .linkPub {
   padding: 0.2vh 0;
+  background-color: #6b77ad !important;
   border-bottom: 0.2vh solid white;
 }
 
-.pubCat div:hover {
+.pubCat .linkPub:hover {
   background-color: #aaa8c7 !important;
 }
 
-.pubCat div a {
+.pubCat .linkPub a {
   font-size: 0.7rem;
   padding-left: 0;
   color: white !important;
   text-decoration: none !important;
+}
+
+.pubCat .imgDivCat {
+  padding-top: 5vh;
+  background-color: white;
+}
+
+.pubCat .imgDivCat img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .postCatContainer {
