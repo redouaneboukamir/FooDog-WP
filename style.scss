@@ -40,7 +40,7 @@
     .linkPub{
         background-color: rgb(107, 119, 173)!important;
         border-bottom: 0.2vh solid white;
-        padding: 2vh 0;
+        padding: 1.5vh 0;
         &:hover{
             background-color:rgb(170, 168, 199)!important;
         }
@@ -51,16 +51,17 @@
             text-decoration: none!important;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
+            p{
+                padding: 0!important;   
+                margin: 0!important;
+            }
             div{
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
-                p{
-                    margin: 0!important;
-                }
             }
         }
     }

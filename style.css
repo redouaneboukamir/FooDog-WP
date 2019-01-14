@@ -40,7 +40,7 @@
 .pubCat .linkPub {
   background-color: #6b77ad !important;
   border-bottom: 0.2vh solid white;
-  padding: 2vh 0;
+  padding: 1.5vh 0;
 }
 
 .pubCat .linkPub:hover {
@@ -59,11 +59,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.pubCat .linkPub a p {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .pubCat .linkPub a div {
@@ -80,10 +86,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.pubCat .linkPub a div p {
-  margin: 0 !important;
 }
 
 .pubCat .imgDivCat {

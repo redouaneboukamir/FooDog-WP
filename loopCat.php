@@ -10,20 +10,20 @@
     <div class="row">
         <div class="linkPub col-12">
             <a href="#" target="_blank" rel="noopener noreferrer">
-                <div><i class="fab fa-facebook-f"></i><p>1221 Fan</p></div>
-
+                <div><i class="fab fa-facebook-f"></i><p> 1221 Fan</p></div>
+                <p>Follow</p>
             </a>
         </div>
         <div class="linkPub col-12">
             <a href="#" target="_blank" rel="noopener noreferrer">
-                <div><i class="fab fa-twitter"></i><p>12221 Followers</p></div>
-
+                <div><i class="fab fa-twitter"></i><p> 12221 Followers</p></div>
+                <p>Follow</p>
             </a>
         </div>
         <div class="linkPub col-12">
             <a href="#" target="_blank" rel="noopener noreferrer">
-                <div><i class="fab fa-instagram"></i><p>122231 Followers</p></div>
-                
+                <div><i class="fab fa-instagram"></i><p> 122231 Followers</p></div>
+                <p>Follow</p>
             </a>
         </div>
         <div class="imgDivCat col-12">
