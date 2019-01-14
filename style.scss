@@ -1,11 +1,9 @@
+//@import "categoryStyle";
 *{
     padding: 0;
     margin: 0;
 }
-body{
-    //font-family: 'Open Sans', sans-serif;
-    //font-family: 'Crimson Text', serif;
-}
+////////////////////////////////////////////////////////////////////////////
 //reset le padding
 .p0{
     padding : 0 0 0 0!important;
@@ -31,9 +29,31 @@ body{
         color: grey;
     }
 }
+////////////////////////////////////////
+//Style Pour les trois buttons et la pub
+.pubCat{
+    position : absolute;
+    top: 42%;
+    left: 62.5%;
+    padding: 0;
+    width: 15%!important;
+    div{
+        background-color: rgb(107, 119, 173)!important;
+        padding: 0.2vh 0;
+        border-bottom: 0.2vh solid white;
+        &:hover{
+            background-color:rgb(170, 168, 199)!important;
+        }
+        a{
+            font-size: 0.7rem;
+            padding-left: 0;
+            color:rgb(255, 255, 255)!important;
+            text-decoration: none!important;
+        }
+    }
+}
 ////////////////////////////////////
 //style pour le contenu des articles
-
 .postCatContainer{
     //permet de structurer dans l'espace le contenu
     width: 36.5%;
@@ -44,6 +64,18 @@ body{
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        width: 55%;
+        margin-left: 5%;
+        .postCat-thumbnail{
+            height: 20vh;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
     //crée la sépartion entre les présentations d'articles
@@ -121,3 +153,8 @@ body{
 
 //font-family: 'Open Sans', sans-serif;
 //font-family: 'Crimson Text', serif;
+
+
+
+
+
