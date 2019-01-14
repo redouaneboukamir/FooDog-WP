@@ -38,9 +38,9 @@
 }
 
 .pubCat .linkPub {
-  padding: 0.2vh 0;
   background-color: #6b77ad !important;
   border-bottom: 0.2vh solid white;
+  padding: 2vh 0;
 }
 
 .pubCat .linkPub:hover {
@@ -52,6 +52,38 @@
   padding-left: 0;
   color: white !important;
   text-decoration: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pubCat .linkPub a div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pubCat .linkPub a div p {
+  margin: 0 !important;
 }
 
 .pubCat .imgDivCat {

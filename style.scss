@@ -38,9 +38,9 @@
     padding: 0;
     width: 12.5%!important;
     .linkPub{
-        padding: 0.2vh 0;
         background-color: rgb(107, 119, 173)!important;
         border-bottom: 0.2vh solid white;
+        padding: 2vh 0;
         &:hover{
             background-color:rgb(170, 168, 199)!important;
         }
@@ -49,6 +49,19 @@
             padding-left: 0;
             color:rgb(255, 255, 255)!important;
             text-decoration: none!important;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                p{
+                    margin: 0!important;
+                }
+            }
         }
     }
     .imgDivCat{
