@@ -29,6 +29,9 @@
         <div class="imgDivCat col-12">
             <img src="https://www.santevet.com/upload/admin/images/article/tag/gamelle-chien.jpeg" alt="">
         </div>
+        <div class="buttonCat">
+            <a href="">Try Now</a>
+        </div>
     </div>
 </div>
 
