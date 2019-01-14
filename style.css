@@ -49,6 +49,8 @@
 
 .pubCat .linkPub a {
   font-size: 0.7rem;
+  width: 88%;
+  margin-left: 6%;
   padding-left: 0;
   color: white !important;
   text-decoration: none !important;
