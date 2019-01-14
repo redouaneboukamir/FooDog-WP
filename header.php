@@ -5,9 +5,11 @@
     <meta type="description" content="<?php bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/style.css">
+
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
@@ -22,9 +24,19 @@
         <?php 
         // wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList debug')); 
         ?>
+
+    <div class="fooDog_searchWindow">
+   
+    </div>
+</div>
+<!-- page layout -->
+<div class="fooDog_social col-12">    
+    <nav class="fooDog_socialNav">
+        <?php wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList')); ?>
+
     </nav>
 </div>
-<div class="fooDog_content debug">
+<div class="fooDog_content_header">
     <header class="header">
         <div class="row">
             <div class="fooDog_title col-12">
@@ -85,6 +97,16 @@
 
                </div>
               <?php endwhile;?>
+
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="fooDog_main collapse navbar-collapse" id="navbarSupportedContent">
+                    <?php wp_nav_menu(array('theme_location' => 'fooDog_mainNavList', 'menu_class' => 'fooDog_mainNavList navbar-nav mr-auto col-8 offset-2', 'container' => '')); ?>
+                </div>
+            </nav>
+        </div>
 
     </header>
 

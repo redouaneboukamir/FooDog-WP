@@ -11,6 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain: FooDog-WP
 */
+
 @import 'stickyPost';
 
 $couleurOrange : #ff8d69;
@@ -19,7 +20,7 @@ $couleurOrange : #ff8d69;
     width:100%;
     height: 100%;
     position: absolute;
-    background-color:red;
+    
 }
 //header
 .fooDog_social{
@@ -73,5 +74,8 @@ $couleurOrange : #ff8d69;
                 }//li
             }//.fooDog_mainNavList
         }//.fooDog_mainNav
+
+@import '_header.scss';
+
 
 }//.header
