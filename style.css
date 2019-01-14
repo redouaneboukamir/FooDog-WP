@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.p0 {
+  padding: 0 0 0 0 !important;
+}
+
+.titleCat {
+  width: 96.5%;
+  background-color: #f7f7f7;
+  padding: 3vh 0;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+
+.titleCat a {
+  color: #4e4d4d;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.titleCat a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.postCatContainer {
+  width: 36.5%;
+  margin-left: 22%;
+}
+
+.postCatContainer .postCat-thumbnail {
+  height: 20vh;
+}
+
+.postCatContainer .postCat-thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.postCatContainer .rowCat {
+  border-bottom: 1px solid #D3D3D3;
+  padding-bottom: 4vh;
+  margin-bottom: 4vh;
+}
+
+.postCatContainer .part2 {
+  margin-right: 3%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.postCatContainer .part2 div .postCat-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.postCatContainer .part2 div .postCat-category a {
+  color: #F77676 !important;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: bolder;
+  padding-right: 1rem;
+  border-right: 1px solid #D3D3D3;
+}
+
+.postCatContainer .part2 .postCat-title a {
+  color: black !important;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.postCatContainer .part2 .postCat-content p {
+  font-size: 0.9rem;
+  font-family: 'Crimson Text', serif;
+}
+
+.postCatContainer .part2 .postCat-content div {
+  font-size: 0.9rem;
+  font-family: 'Crimson Text', serif;
+}
+
+.postCatContainer .part2 .postCat-SHARE {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.postCatContainer .part2 .postCat-SHARE a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: black;
+}
+
+.postCatContainer .part2 .postCat-SHARE a i {
+  margin-top: 8%;
+}
+
+.postCatContainer .part2 .postCat-SHARE a p {
+  color: grey !important;
+  margin-left: 15%;
+}
+/*# sourceMappingURL=style.css.map */
