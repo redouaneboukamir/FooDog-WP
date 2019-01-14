@@ -10,15 +10,18 @@
 </head>
 <body>
 <!-- search pop-up-->
-<div class="fooDog_pop_up">
+<div class="fooDog_pop_up" id="fooDog_pop_up">
     <div class="fooDog_searchWindow">
-    ezvsdvdsvsdvdvsvsdvsdvsdvsdvsdv
+        <p>in progress</p><p style="cursor:pointer;" onclick="hide_pop_up()">Click here to hide</p>
     </div>
 </div>
 <!-- page layout -->
 <div class="fooDog_social col-12">    
-    <nav class="fooDog_socialNav">
-        <?php wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList')); ?>
+    <nav class="fooDog_socialNav">    
+        <?php wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList', 'container' => '')); ?>
+        <div class="menuAndSearch" onclick="search_pop_up()">
+            <i class="search_icon fas fa-search" ></i>
+        </div>
     </nav>
 </div>
 <div class="fooDog_content_header">
