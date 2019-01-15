@@ -6,7 +6,7 @@
  width: 100%;
  height: 100%;
  display:none;
-}
+}//.fooDog_pop_up
 
 .fooDog_searchWindow{
     position: absolute;
@@ -15,7 +15,7 @@
     background-color: rgb(190, 190, 190);
     padding: 50px;
     border-radius: 10px;
-}
+}//.fooDog_searchWindow
 
 //header
 .fooDog_social{
@@ -41,7 +41,8 @@
 .fooDog_content_header{
     max-width: 75%;
     margin: auto;
-}
+}//.fooDog_content_header
+
 .menuAndSearch{
     display: flex;
     flex-direction: row;
@@ -50,7 +51,7 @@
     }
     margin:14px;
     margin-left:0px;
-}
+}//.menuAndSearch
 
 .header{
     border-bottom: grey solid 2px;
@@ -75,10 +76,10 @@
                 margin:auto;
             }
         }
-    }
+    }//.fooDog_main
     .navbar-toggler{
         color:black;
-    }
+    }//.navbar-toggler
 }//.header
 
 //media header
@@ -91,11 +92,7 @@
             border-collapse: collapse;
             a{
                 margin: auto;
-            }
-        }
-    }
-}
-
-.debug{
-    width:100%;
+            }//a
+        }//li
+    }//.fooDog_main
 }

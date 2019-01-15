@@ -12,7 +12,8 @@
 <!-- search pop-up-->
 <div class="fooDog_pop_up" id="fooDog_pop_up">
     <div class="fooDog_searchWindow">
-        <p>in progress</p><p style="cursor:pointer;" onclick="hide_pop_up()">Click here to hide</p>
+        <!--temp-->
+        <p>in progress...</p><p style="cursor:pointer;" onclick="hide_pop_up()">Click here to hide</p>
     </div>
 </div>
 <!-- page layout -->
