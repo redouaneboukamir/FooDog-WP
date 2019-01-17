@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 17 jan. 2019 à 08:57
+-- Généré le :  jeu. 17 jan. 2019 à 09:03
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
@@ -628,8 +628,8 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
 (1, 1, 'nickname', 'Valentin-Beaufays'),
-(2, 1, 'first_name', ''),
-(3, 1, 'last_name', ''),
+(2, 1, 'first_name', 'Valentin'),
+(3, 1, 'last_name', 'Beaufays'),
 (4, 1, 'description', ''),
 (5, 1, 'rich_editing', 'true'),
 (6, 1, 'syntax_highlighting', 'true'),
@@ -643,16 +643,16 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (14, 1, 'dismissed_wp_pointers', 'wp496_privacy,plugin_editor_notice,theme_editor_notice'),
 (15, 1, 'show_welcome_panel', '1'),
 (38, 3, 'nickname', 'kazaryth'),
-(39, 3, 'first_name', ''),
-(40, 3, 'last_name', ''),
+(39, 3, 'first_name', 'Maxime'),
+(40, 3, 'last_name', 'Christiaens'),
 (41, 3, 'description', ''),
 (42, 3, 'rich_editing', 'true'),
 (43, 3, 'syntax_highlighting', 'true'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '52'),
 (33, 2, 'show_admin_bar_front', 'true'),
 (34, 2, 'locale', ''),
-(35, 2, 'wp_capabilities', 'a:1:{s:10:\"subscriber\";b:1;}'),
-(36, 2, 'wp_user_level', '0'),
+(35, 2, 'wp_capabilities', 'a:1:{s:13:\"administrator\";b:1;}'),
+(36, 2, 'wp_user_level', '10'),
 (37, 2, 'dismissed_wp_pointers', 'wp496_privacy'),
 (18, 1, 'nav_menu_recently_edited', '5'),
 (19, 1, 'managenav-menuscolumnshidden', 'a:0:{}'),
@@ -674,8 +674,8 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (46, 3, 'use_ssl', '0'),
 (47, 3, 'show_admin_bar_front', 'true'),
 (48, 3, 'locale', ''),
-(49, 3, 'wp_capabilities', 'a:1:{s:10:\"subscriber\";b:1;}'),
-(50, 3, 'wp_user_level', '0'),
+(49, 3, 'wp_capabilities', 'a:1:{s:13:\"administrator\";b:1;}'),
+(50, 3, 'wp_user_level', '10'),
 (51, 3, 'dismissed_wp_pointers', 'wp496_privacy');
 
 -- --------------------------------------------------------
