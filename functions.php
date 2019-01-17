@@ -1,16 +1,22 @@
+
 <?php add_theme_support('post-thumbnails'); 
 //permet d'activer l'upload d'un thumbnail lors de la création d'un article
 
 //Val 
+
+
+<?php
     function register_my_menus() {
         register_nav_menus(
             array(
                 'fooDog_socialNavList' => 'social networks',
-                'fooDog_mainNavList' => 'main navbar'
-            )
+                'fooDog_mainNavList' => 'main navbar',
+                'footer-menu' => 'footer categorie'
+            ) 
         );
     }
     add_action( 'init', 'register_my_menus' );
+    add_theme_support('post-thumbnails');
 
     //css files
     function fooDog_enqueue_styles(){
@@ -29,3 +35,4 @@
     }
     add_action('enqueue_scripts', fooDog_enqueue_scripts());
 ?>
+

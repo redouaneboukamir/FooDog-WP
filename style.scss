@@ -8,7 +8,18 @@ Description: becode project's theme
 @import '_categoryStyle.scss';
 *{
     padding: 0;
-    margin: 0;
+    margin: 0;}
+//search pop-up
+
+@import 'footer.scss';
+
+.fooDog_pop_up{
+    z-index: 2;
+    display: none;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color:red;
 }
 .debug{
     border:red solid 1px;
