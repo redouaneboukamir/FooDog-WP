@@ -10,6 +10,7 @@ get_header();
 <div class="contenuLoop col-10">
     <?php get_template_part('loop');?>
 </div>
+
 </div>
 <?php
 get_footer();

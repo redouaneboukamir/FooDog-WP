@@ -456,8 +456,9 @@ Text Domain: FooDog-WP
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 10px;
 }
 
@@ -470,6 +471,7 @@ Text Domain: FooDog-WP
 
 .contentAllArticleViews .firstArticleView .imgFirstView {
   width: 100%;
+  height: 80%;
 }
 
 .contentAllArticleViews .firstArticleView .imgFirstView:hover {
@@ -481,6 +483,19 @@ Text Domain: FooDog-WP
 .contentAllArticleViews .firstArticleView .imgFirstView img {
   width: 100%;
   height: 100%;
+}
+
+.contentAllArticleViews .firstArticleView .ensembleCategoryTitre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contentAllArticleViews .firstArticleView .titleFirstView {
@@ -521,6 +536,7 @@ Text Domain: FooDog-WP
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 30%;
 }
 
 .contentAllArticleViews .content4ArticleViews .content4articleView:hover {
@@ -532,6 +548,7 @@ Text Domain: FooDog-WP
 
 .contentAllArticleViews .content4ArticleViews .imgOtherView {
   margin-top: 10px;
+  height: 250px;
 }
 
 .contentAllArticleViews .content4ArticleViews .imgOtherView:hover {
@@ -542,7 +559,7 @@ Text Domain: FooDog-WP
 
 .contentAllArticleViews .content4ArticleViews .imgOtherView img {
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
 .contentAllArticleViews .content4ArticleViews .title4View {
@@ -555,6 +572,134 @@ Text Domain: FooDog-WP
 .contentAllArticleViews .content4ArticleViews .title4View a {
   text-decoration: none;
   color: black;
+}
+
+.contentAllCategoryPub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentAllCategoryPub .pubCategory {
+  margin-top: 150px;
+}
+
+.contentAllCategoryPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contentCategoryPost {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contentCategoryPost .categoryPost {
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentCategoryPost .categoryPost .imageCategory {
+  height: 200px;
+}
+
+.contentCategoryPost .categoryPost .imageCategory:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contentCategoryPost .categoryPost .imageCategory img {
+  width: 100%;
+  height: 100%;
+}
+
+.contentCategoryPost .categoryPost .contentArticleCategory a {
+  text-decoration: none;
+}
+
+.contentCategoryPost .categoryPost .contentArticleCategory .categoryCategory {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.contentCategoryPost .categoryPost .contentArticleCategory .categoryCategory .post-categories {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.contentCategoryPost .categoryPost .contentArticleCategory .categoryCategory .post-categories li {
+  padding-left: 5px;
+}
+
+.contentCategoryPost .categoryPost .contentArticleCategory .categoryCategory .post-categories li a {
+  color: #ff8d69;
+}
+
+.contentCategoryPost .categoryPost .contentArticleCategory .titleCategory {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.contentCategoryPost .categoryPost .contentArticleCategory .titleCategory:hover {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 7px solid #ff8d69;
+}
+
+.pubCategory .contentSociaux i, .pubCategory .contentSociaux span {
+  padding-left: 10px;
+}
+
+.pubCategory .contentSociaux .facebookSlide {
+  background: #899cce;
+  padding: 10px 0;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.pubCategory .contentSociaux .facebookSlide:hover {
+  background: #262c3d;
+}
+
+.pubCategory .contentSociaux .twitterSlide {
+  background: #60d1f5;
+  padding: 10px 0;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.pubCategory .contentSociaux .twitterSlide:hover {
+  background: #262c3d;
+}
+
+.pubCategory .contentSociaux .instaSlide {
+  color: white;
+  background: #709bbf;
+  padding: 10px 0;
+}
+
+.pubCategory .contentSociaux .instaSlide:hover {
+  background: #262c3d;
 }
 
 .contentAll {

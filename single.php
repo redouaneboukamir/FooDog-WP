@@ -14,9 +14,9 @@
                     </div>
                     
                     <div class="post-comments">
-                        <!-- <?php 
-                        // comments_template(); 
-                        ?> -->
+                        <?php 
+                        comments_template(); 
+                        ?> 
                         <!-- Posté le  -->
                         <?php 
                         // the_date(); 

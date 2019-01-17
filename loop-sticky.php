@@ -20,7 +20,7 @@
                 </div>
                 <div class="contentAllStickyPub container">
                     
-                    <div class="contentAllStickyPost col-8">
+                    <div class="contentAllStickyPost col-lg-8 col-xs-12 col-sm-10">
                     <?php
                     // Boucle sur les sticky post
                     while ( $i < 3 && $recentPosts->have_posts() ) : $recentPosts->the_post();	
@@ -55,7 +55,7 @@
                         </div>
                         <?php endwhile;?>
                     </div>
-                    <div class="pubSticky col-4">
+                    <div class="pubSticky col-3">
                         <div class="contentSociaux col-12">
                             <div class="facebookSlide col-12">
                             <i class="fab fa-facebook-f"></i>
