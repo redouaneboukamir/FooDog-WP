@@ -70,6 +70,11 @@ Text Domain: FooDog-WP
           justify-content: center;
 }
 
+.header .fooDog_title .fooDog_name a {
+  color: black;
+  text-decoration: none;
+}
+
 .header .navbar {
   width: 100%;
   margin: 10px;
@@ -146,6 +151,10 @@ Text Domain: FooDog-WP
   height: 100%;
 }
 
+.contentStickyPost .stickyPost .contentArticleSticky a {
+  text-decoration: none;
+}
+
 .contentStickyPost .stickyPost .contentArticleSticky .categorySticky {
   text-transform: uppercase;
   font-size: 0.8em;
@@ -219,25 +228,38 @@ Text Domain: FooDog-WP
 
 .mainSingle .singleContent {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.latestPost {
+  margin-top: 50px;
+}
+
+.latestPost h6 {
+  text-transform: uppercase;
+  padding-right: 0;
+}
+
+.latestPost .borderLastestPost {
+  background-color: lightgray;
+  height: 3px;
+  margin-top: 7px;
 }
 
 .contentAllArticle {
-  margin-top: 50px;
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contentAllArticle .imageArticle {
-  height: 200px;
+  height: 300px;
+  margin-top: 50px;
 }
 
 .contentAllArticle .imageArticle img {
@@ -246,12 +268,26 @@ Text Domain: FooDog-WP
 }
 
 .contentAllArticle .contentArticle {
-  padding: 20px 0;
-  border-bottom: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contentAllArticle .contentArticle a {
+  text-decoration: none;
 }
 
 .contentAllArticle .contentArticle .categoryArticle {
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 0.8em;
 }
 
@@ -275,10 +311,10 @@ Text Domain: FooDog-WP
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+  text-align: center;
 }
 
 .contentAllArticleViews {
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,18 +333,23 @@ Text Domain: FooDog-WP
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+}
+
+.contentAllArticleViews .firstArticleView .imgFirstView {
+  width: 100%;
 }
 
 .contentAllArticleViews .firstArticleView .imgFirstView img {
   width: 100%;
-  height: 81%;
+  height: 100%;
 }
 
 .contentAllArticleViews .firstArticleView .titleFirstView {
-  font-size: 2em;
+  text-align: center;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -344,6 +385,50 @@ Text Domain: FooDog-WP
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.contentAllArticleViews .content4ArticleViews .imgOtherView {
+  margin-top: 10px;
+}
+
+.contentAllArticleViews .content4ArticleViews .imgOtherView img {
+  width: 100%;
+  height: 80%;
+}
+
+.contentAllArticleViews .content4ArticleViews .title4View {
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contentAllArticleViews .content4ArticleViews .title4View a {
+  text-decoration: none;
+  color: black;
+}
+
+.contentAll {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentLoopViews {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .fooDog_pop_up {

@@ -40,7 +40,8 @@
                                 <?php 
                                 $more = 30;
                                 $aftermore = false;
-                                the_content($more,$aftermore); 
+                                // the_content($more,$aftermore); 
+                                the_excerpt();
                                 ?>
                                 <div class="contentShare">
                                     <span class="shareIcon"><i class="fas fa-share"></i></span>

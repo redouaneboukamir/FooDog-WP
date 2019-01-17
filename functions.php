@@ -41,5 +41,9 @@
         }
        }
        add_action( 'wp_head', 'count_post_visits' );
+       function custom_excerpt_length( $length ) {
+        return 20;
+    }
+    add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 ?>

@@ -40,7 +40,7 @@
     <header class="header">
         <div class="row">
             <div class="fooDog_title col-12">
-                <h1 class="fooDog_name"><?php bloginfo('name'); ?></h1>
+            <h1 class="fooDog_name"><a href="<?php echo get_option('home'); ?>/" ><?php bloginfo('name'); ?></a></h1>
             </div>
         </div>
         <div class="row">
@@ -63,5 +63,6 @@
         </div>
 
     </header>
+    <main class="contentAll">
 
   

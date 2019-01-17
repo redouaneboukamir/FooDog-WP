@@ -18,6 +18,25 @@ Text Domain: FooDog-WP
 @import 'loop-views';
 
 $couleurOrange : #ff8d69;
+.contentAll{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentLoopViews{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contenuLoopSticky{
+
+}
+.contenuLoop{
+
+}
+
 .fooDog_pop_up{
     display: none;
     width:100%;

@@ -1,26 +1,34 @@
 
 
 <?php if (have_posts()) : ?>
-    <div class="contentAllArticle col-10">
+<div class="latestPost row col-8">
+    <h6 class="col-3">lastest posts</h6>
+    <div class="borderLastestPost col-9"></div>
+</div>
+    <div class="contentAllArticle col-8">
         <?php while (have_posts()) : the_post(); ?>
         
             <div class="contentArticle row col-6"> 
-                <figure class="imageArticle col-5"><?php 
-                $before = '<h4 class="titleArticle">';
-                $after = "</h4>";
+                <figure class="imageArticle col-12"><?php 
+                ;
                 if(has_post_thumbnail()){
                                
                     the_post_thumbnail();
                 }
                            
                 ?></figure>
-                <div class="contentArticleSticky col-7">
+                <div class="contentArticleDescr">
                     <span class="categoryArticle"><?php the_category();?> </span>
-                    <a href="<?php the_permalink()?>"><?php  the_title($before,$after);?></a>
+                    <a href="<?php the_permalink()?>"><?php  
+                    $before = '<h4 class="titleArticle col-12">';
+                    $after = "</h4>";
+                    the_title($before,$after);
+                    ?></a>
                     <?php 
                     $more = 30;
                     $aftermore = false;
-                    the_content($more,$aftermore); 
+                    // the_content($more,$aftermore); 
+                    the_excerpt();
                     ?>
                     <div class="contentShare">
                         <!-- <span class="shareIcon"><i class="fas fa-share"></i></span> -->

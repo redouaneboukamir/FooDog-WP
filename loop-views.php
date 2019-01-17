@@ -8,32 +8,39 @@
        );
         
        $popular_posts_loop = new WP_Query( $popular_posts_args );
-        $i=0;?>
-        <div class="contentAllArticleViews row col-10">
-        <?php
-       while( $popular_posts_loop->have_posts() && $i < 4):
-        $i++;
-        $popular_posts_loop->the_post();
-        ?>
+        $i=0;
+            ?>
+            <div class="contentAllArticleViews row container">
             <?php
-            if($i == 1):?>
-            <div class="firstArticleView col-6">
-                <figure class="imgFirstView"> <?php the_post_thumbnail(); ?></figure>
-                <span class="categoryView"><?php the_category(); ?></span>
-                <span class="titleFirstView"><a href="<?php the_permalink()?>"><?php the_title(); ?></a></span>
-            </div>
-            <?php  ?>
-            <?php else : ?>
-            <!-- <div class="content4ArticleViews row col-6">  -->
-                <div class="4articleView">
-                    <?php the_title(); ?>
-                </div>
-            <!-- </div> -->
-            <?php endif;
             
-        ?>
-            <?php
-       endwhile;?>
+        while( $popular_posts_loop->have_posts() && $i < 1):
+            $i++;
+            $popular_posts_loop->the_post();
+           
+            ?>
+                <div class="firstArticleView row col-6">
+                    <figure class="imgFirstView"> <?php the_post_thumbnail(); ?></figure>
+                    <span class="categoryView"><?php the_category(); ?></span>
+                    <span class="titleFirstView"><a href="<?php the_permalink()?>"><?php the_title(); ?></a></span>
+                </div>
+                <?php   endwhile;?>
+                <div class="content4ArticleViews row col-6"> 
+                <?php
+                while($popular_posts_loop->have_posts() && $i >= 1 && $i <= 4):
+                    
+                    
+                        $i++;
+                        $popular_posts_loop->the_post();
+                    ?>
+                
+                        <div class="content4articleView col-6">
+                            <figure class="imgOtherView"><?php the_post_thumbnail(); ?></figure>
+                            <span class="title4View"><a href="<?php the_permalink()?>"><?php the_title(); ?></a></span>
+                        </div>
+                    <?php endwhile;  ?>
+                </div>
+
+
        </div>
        <?php
        wp_reset_query();

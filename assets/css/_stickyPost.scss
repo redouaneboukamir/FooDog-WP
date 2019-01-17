@@ -30,7 +30,9 @@ $couleurOrange : rgb(255, 141, 105);
         }
     }
     .contentArticleSticky{
-        
+        a{
+            text-decoration: none;
+        }
         .categorySticky{
             text-transform: uppercase;
             font-size: 0.8em;
