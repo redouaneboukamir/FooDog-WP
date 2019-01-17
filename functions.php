@@ -1,4 +1,7 @@
-<?php
+<?php add_theme_support('post-thumbnails'); 
+//permet d'activer l'upload d'un thumbnail lors de la création d'un article
+
+//Val 
     function register_my_menus() {
         register_nav_menus(
             array(
@@ -24,3 +27,4 @@
     }
     add_action('enqueue_scripts', fooDog_enqueue_scripts());
 ?>
+

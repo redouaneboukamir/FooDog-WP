@@ -5,7 +5,11 @@ Author URI: http://foodog.com
 Description: becode project's theme
 */
 @import '_header.scss';
-
+@import "categoryStyle";
+*{
+    padding: 0;
+    margin: 0;
+}
 .debug{
     border:red solid 1px;
 }

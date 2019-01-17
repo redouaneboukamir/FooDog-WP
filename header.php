@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php wp_title(); ?></title>
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 <body>
@@ -26,7 +27,7 @@
         </div>
     </nav>
 </div>
-<div class="fooDog_content_header">
+<div class="fooDog_content_header wrap">
     <header class="header">
         <div class="row">
             <div class="fooDog_title col-12">
