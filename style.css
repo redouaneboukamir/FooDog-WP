@@ -4,6 +4,98 @@ Author: X-Force
 Author URI: http://foodog.com
 Description: becode project's theme
 */
+footer {
+  background-color: #3A3E43;
+  color: white; }
+
+.titlecategories {
+  font-weight: bold;
+  font-family: open sans;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  margin-left: 3em;
+  color: #767979; }
+
+.footercategories {
+  list-style: none;
+  font-family: open sans;
+  font-size: 0.8rem;
+  margin-left: -1rem; }
+  .footercategories li {
+    border-bottom: 1px solid #767979;
+    margin-top: 1em; }
+    .footercategories li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold; }
+
+.populartitle {
+  font-weight: bold;
+  font-family: open sans;
+  margin-top: 3rem;
+  margin-left: 4em;
+  font-size: 0.8rem;
+  color: #767979; }
+
+.imgpopular img {
+  width: 5rem;
+  height: 4rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem; }
+
+.titlearticle a {
+  color: white;
+  font-size: 1rem; }
+
+.titleinstagram {
+  font-weight: bold;
+  font-family: open sans;
+  margin-top: 3rem;
+  margin-left: 2em;
+  font-size: 0.8rem;
+  color: #767979; }
+
+.footerinstagram {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.footerreseaux {
+  background-color: #303336;
+  padding: 2em; }
+  .footerreseaux .alignementreaseaux {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+    margin-right: 10em !important;
+    margin-bottom: 2em !important; }
+    .footerreseaux .alignementreaseaux a {
+      background-color: #5C5D5C;
+      font-size: 1em;
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      padding: 0.2em;
+      margin: 0.5em;
+      color: white;
+      display: block;
+      float: left;
+      text-align: center;
+      margin-right: 10px; }
+      .footerreseaux .alignementreaseaux a i {
+        margin: auto;
+        padding: auto; }
+
+.url {
+  font-size: 12px;
+  text-align: center;
+  color: #767979;
+  font-family: open sans; }
+
 .fooDog_pop_up {
   z-index: 2;
   display: none;
