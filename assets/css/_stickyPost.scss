@@ -1,5 +1,7 @@
 $couleurOrange : rgb(255, 141, 105);
+.contentAllStickyPost{
 
+}
 .headerPost{
     h6{
         text-transform: uppercase;
@@ -47,6 +49,8 @@ $couleurOrange : rgb(255, 141, 105);
         }
         .titleSticky{
             text-transform: uppercase;
+            text-decoration: none;
+            color: black;
         }
         .contentShare{
             display: flex;

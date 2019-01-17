@@ -1,0 +1,24 @@
+.titleSingle{
+    color:black;
+    text-transform: uppercase;
+    text-align: center;
+    margin:10px 15px;
+}
+.imageSingle{
+    img{
+
+        width: 100%;
+       height: 400px;
+    }
+}
+.mainSingle{
+    margin-top: 50px;
+    display: flex;
+    
+    .singleContent{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        
+    }
+}
