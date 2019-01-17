@@ -58,15 +58,19 @@
                     <div class="pubSticky col-4">
                         <div class="contentSociaux col-12">
                             <div class="facebookSlide col-12">
+                            <i class="fab fa-facebook-f"></i>
                                 <span>Facebook</span>
                             </div>
                             <div class="twitterSlide col-12">
+                            <i class="fab fa-twitter"></i>
                                 <span>Twitter</span>
                             </div>
                             <div class="instaSlide col-12">
+                            <i class="fab fa-instagram"></i>
                                     <span>Instagram</span>
                             </div>
                         </div>
+                        <figure><img src=""></figure>
                     </div>
 
 </div>

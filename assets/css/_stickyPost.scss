@@ -84,14 +84,34 @@ $couleurOrange : rgb(255, 141, 105);
 }
 .pubSticky{
     .contentSociaux{
+        i,span{
+            padding-left: 10px;
+        }
         .facebookSlide{
             background: #899cce;
+            padding: 10px 0;
+            color: white;
+            margin-bottom: 5px;
+            &:hover{
+                background: #262c3d;
+            }
         }
         .twitterSlide{
             background: #60d1f5;
+            padding: 10px 0;
+            color: white;
+            margin-bottom: 5px;
+            &:hover{
+                background: #262c3d;
+            }
         }
         .instaSlide{
-
+            color: white;
+            background: #709bbf;
+            padding: 10px 0;
+            &:hover{
+                background: #262c3d;
+            }
         }
     }
 }

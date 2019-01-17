@@ -245,12 +245,40 @@ Text Domain: FooDog-WP
   font-size: 0.8em;
 }
 
+.pubSticky .contentSociaux i, .pubSticky .contentSociaux span {
+  padding-left: 10px;
+}
+
 .pubSticky .contentSociaux .facebookSlide {
   background: #899cce;
+  padding: 10px 0;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.pubSticky .contentSociaux .facebookSlide:hover {
+  background: #262c3d;
 }
 
 .pubSticky .contentSociaux .twitterSlide {
   background: #60d1f5;
+  padding: 10px 0;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.pubSticky .contentSociaux .twitterSlide:hover {
+  background: #262c3d;
+}
+
+.pubSticky .contentSociaux .instaSlide {
+  color: white;
+  background: #709bbf;
+  padding: 10px 0;
+}
+
+.pubSticky .contentSociaux .instaSlide:hover {
+  background: #262c3d;
 }
 
 .titleSingle {
