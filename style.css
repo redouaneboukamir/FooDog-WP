@@ -1,0 +1,105 @@
+/*
+Theme Name: FooDog
+Author: X-Force
+Author URI: http://foodog.com
+Description: becode project's theme
+*/
+.fooDog_pop_up {
+  background-color: rgba(255, 255, 255, 0.705);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: none; }
+
+.fooDog_searchWindow {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: #bebebe;
+  padding: 50px;
+  border-radius: 10px; }
+
+.fooDog_social .fooDog_socialNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .fooDog_social .fooDog_socialNav .fooDog_socialNavList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 10px;
+    margin: 0; }
+    .fooDog_social .fooDog_socialNav .fooDog_socialNavList li {
+      margin-left: 10px; }
+      .fooDog_social .fooDog_socialNav .fooDog_socialNavList li a {
+        color: black; }
+
+.fooDog_content_header {
+  max-width: 75%;
+  margin: auto; }
+
+.menuAndSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 14px;
+  margin-left: 0px; }
+  .menuAndSearch:hover {
+    cursor: pointer; }
+
+.header {
+  border-bottom: grey solid 2px; }
+  .header .fooDog_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .header .navbar {
+    width: 100%;
+    margin: 10px; }
+  .header .fooDog_main {
+    width: 100%; }
+    .header .fooDog_main ul {
+      margin: auto;
+      padding-right: 0px;
+      width: 80%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .header .fooDog_main ul a {
+        color: black;
+        margin: auto; }
+  .header .navbar-toggler {
+    color: black; }
+
+@media only screen and (max-width: 992px) {
+  .fooDog_main li {
+    border: grey 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    border-collapse: collapse; }
+    .fooDog_main li a {
+      margin: auto; } }
+
+.debug {
+  border: red solid 1px; }
