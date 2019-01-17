@@ -13,4 +13,7 @@
     <?php wp_footer(); ?>
     </body>
 </html>
+<<<<<<< HEAD
+>>>>>>> 8b19a5d... Update footer.php
+=======
 >>>>>>> 8b19a5d... Update footer.php
