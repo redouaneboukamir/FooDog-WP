@@ -9,4 +9,13 @@
     ],
     "names": [],
     "file": "colors.css"
+},AAAA,MAAM;AAC9C,WAAW,AAAA,KAAK,CAAC,WAAW,CAAC,YAAY,GAAG,EAAE,GAAG,QAAQ,AAAA,MAAM;AAC/D,WAAW,AAAA,KAAK,CAAC,YAAY,GAAG,EAAE,AAAA,QAAQ,AAAA,MAAM,GAAG,QAAQ;AAC3D,WAAW,CAAC,YAAY,GAAG,EAAE,AAAA,QAAQ,AAAA,MAAM,GAAG,QAAQ,CAAC;EACtD,KAAK,EA5BO,IAAI;CA6BhB;;AAED,+DAA+D;AAC/D,AAAA,cAAc,AAAA,QAAQ;AACtB,aAAa,AAAA,QAAQ,CAAC;EACrB,mBAAmB,EAjCF,OAAO;CAkCxB",
+    "sources": [
+        "../../../wp-admin/css/colors/light/colors.scss",
+        "../../../wp-admin/css/colors/_admin.scss",
+        "../../../wp-admin/css/colors/_variables.scss",
+        "../../../wp-admin/css/colors/_mixins.scss"
+    ],
+    "names": [],
+    "file": "colors.css"
 }

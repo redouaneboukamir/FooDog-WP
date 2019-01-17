@@ -46,7 +46,9 @@
         <div class="row">
 
                 <nav class="fooDog_mainNav col-12">
-                    <?php wp_nav_menu(array('theme_location' => 'fooDog_mainNavList', 'menu_class' => 'fooDog_mainNavList')); ?>
+                    <?php 
+                    // wp_nav_menu(array('theme_location' => 'fooDog_mainNavList', 'menu_class' => 'fooDog_mainNavList'));
+                    ?>
                 </nav>
             </div>
 

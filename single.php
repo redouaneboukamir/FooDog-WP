@@ -2,11 +2,12 @@
     <div class="mainSingle container col-10">
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-        <div  class="imageSingle col-4">
+        <span class="categorySingle col-7"> <?php the_category() ?></span>
+        <h1 class="titleSingle col-7"><?php the_title(); ?></h1>
+        <div  class="imageSingle col-7">
             <figure><?php the_post_thumbnail() ?></figure>
         </div>
-            <div class="col-8">
-                <h1 class="titleSingle"><?php the_title(); ?></h1>
+            <div class="col-7">
             
                     <div class="singleContent">
                         <?php the_content(); ?>

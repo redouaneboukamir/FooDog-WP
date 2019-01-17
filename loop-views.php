@@ -19,7 +19,7 @@
            
             ?>
                 <div class="firstArticleView row col-6">
-                    <figure class="imgFirstView"> <?php the_post_thumbnail(); ?></figure>
+                    <figure class="imgFirstView"> <a href="<?php the_permalink()?>"><?php the_post_thumbnail(); ?></a></figure>
                     <span class="categoryView"><?php the_category(); ?></span>
                     <span class="titleFirstView"><a href="<?php the_permalink()?>"><?php the_title(); ?></a></span>
                 </div>
@@ -34,7 +34,7 @@
                     ?>
                 
                         <div class="content4articleView col-6">
-                            <figure class="imgOtherView"><?php the_post_thumbnail(); ?></figure>
+                            <figure class="imgOtherView"><a href="<?php the_permalink()?>"><?php the_post_thumbnail(); ?></a></figure>
                             <span class="title4View"><a href="<?php the_permalink()?>"><?php the_title(); ?></a></span>
                         </div>
                     <?php endwhile;  ?>

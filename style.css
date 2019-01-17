@@ -57,10 +57,6 @@ Text Domain: FooDog-WP
   margin: auto;
 }
 
-.header {
-  border-bottom: grey solid 2px;
-}
-
 .header .fooDog_title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,6 +89,8 @@ Text Domain: FooDog-WP
 
 .header .fooDog_main {
   width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
 }
 
 .header .fooDog_main ul {
@@ -103,11 +101,22 @@ Text Domain: FooDog-WP
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-transform: uppercase;
 }
 
 .header .fooDog_main ul a {
+  width: 20%;
+  padding-bottom: 20px;
   color: black;
   margin: auto;
+  text-decoration: none;
+}
+
+.header .fooDog_main ul a:hover {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 7px solid #ff8d69;
 }
 
 .header .navbar-toggler {
@@ -116,7 +125,6 @@ Text Domain: FooDog-WP
 
 @media only screen and (max-width: 992px) {
   .fooDog_main li {
-    border: grey 1px solid;
     padding: 5px;
     border-radius: 5px;
     border-collapse: collapse;
@@ -128,6 +136,12 @@ Text Domain: FooDog-WP
 
 .debug {
   width: 100%;
+}
+
+.contentAllStickyPub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .headerPost h6 {
@@ -155,6 +169,12 @@ Text Domain: FooDog-WP
 
 .contentStickyPost .stickyPost .imageSticky {
   height: 200px;
+}
+
+.contentStickyPost .stickyPost .imageSticky:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .contentStickyPost .stickyPost .imageSticky img {
@@ -193,6 +213,13 @@ Text Domain: FooDog-WP
   color: black;
 }
 
+.contentStickyPost .stickyPost .contentArticleSticky .titleSticky:hover {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 7px solid #ff8d69;
+}
+
 .contentStickyPost .stickyPost .contentArticleSticky .contentShare {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,16 +245,26 @@ Text Domain: FooDog-WP
   font-size: 0.8em;
 }
 
+.pubSticky .contentSociaux .facebookSlide {
+  background: #899cce;
+}
+
+.pubSticky .contentSociaux .twitterSlide {
+  background: #60d1f5;
+}
+
 .titleSingle {
-  color: black;
+  font-size: 1.5em;
+  color: #555555;
   text-transform: uppercase;
   text-align: center;
   margin: 10px 15px;
+  margin-bottom: 50px;
 }
 
 .imageSingle img {
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 .mainSingle {
@@ -235,10 +272,44 @@ Text Domain: FooDog-WP
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mainSingle .singleContent {
   margin-top: 50px;
+}
+
+.categorySingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.categorySingle .post-categories {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.categorySingle .post-categories li {
+  padding-left: 5px;
+}
+
+.categorySingle .post-categories li a {
+  color: #ff8d69;
 }
 
 .latestPost {
@@ -271,6 +342,12 @@ Text Domain: FooDog-WP
 .contentAllArticle .imageArticle {
   height: 300px;
   margin-top: 50px;
+}
+
+.contentAllArticle .imageArticle:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .contentAllArticle .imageArticle img {
@@ -325,6 +402,13 @@ Text Domain: FooDog-WP
   text-align: center;
 }
 
+.contentAllArticle .contentArticle .titleArticle:hover {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 7px solid #ff8d69;
+}
+
 .contentAllArticleViews {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,8 +433,21 @@ Text Domain: FooDog-WP
   margin-top: 10px;
 }
 
+.contentAllArticleViews .firstArticleView:hover {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 7px solid #ff8d69;
+}
+
 .contentAllArticleViews .firstArticleView .imgFirstView {
   width: 100%;
+}
+
+.contentAllArticleViews .firstArticleView .imgFirstView:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .contentAllArticleViews .firstArticleView .imgFirstView img {
@@ -398,8 +495,21 @@ Text Domain: FooDog-WP
       flex-wrap: wrap;
 }
 
+.contentAllArticleViews .content4ArticleViews .content4articleView:hover {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 7px solid #ff8d69;
+}
+
 .contentAllArticleViews .content4ArticleViews .imgOtherView {
   margin-top: 10px;
+}
+
+.contentAllArticleViews .content4ArticleViews .imgOtherView:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .contentAllArticleViews .content4ArticleViews .imgOtherView img {
@@ -438,7 +548,7 @@ Text Domain: FooDog-WP
 }
 
 .contentLoopViews {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
