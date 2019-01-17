@@ -41,10 +41,15 @@
         display:flex;
         justify-content: center;
         .fooDog_name{
-        
+            font-size: 5em;
+            font-family: 'EB Garamond', serif;
             a{
-                color: black;
+                color: rgb(85, 85, 85);
                 text-decoration: none;
+                &:hover{
+                    opacity: 0.6;
+                    transition: all 0.3s;
+                }
             
         }
 

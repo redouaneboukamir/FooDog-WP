@@ -70,9 +70,20 @@ Text Domain: FooDog-WP
           justify-content: center;
 }
 
+.header .fooDog_title .fooDog_name {
+  font-size: 5em;
+  font-family: 'EB Garamond', serif;
+}
+
 .header .fooDog_title .fooDog_name a {
-  color: black;
+  color: #555555;
   text-decoration: none;
+}
+
+.header .fooDog_title .fooDog_name a:hover {
+  opacity: 0.6;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header .navbar {

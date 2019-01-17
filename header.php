@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
@@ -22,7 +22,7 @@
 <div class="fooDog_social col-12">    
     <nav class="fooDog_socialNav debug">
         <?php 
-        // wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList debug')); 
+        wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList debug')); 
         ?>
 
     <div class="fooDog_searchWindow">
