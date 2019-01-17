@@ -5,7 +5,8 @@ Author URI: http://foodog.com
 Description: becode project's theme
 */
 @import '_header.scss';
-@import "categoryStyle";
+@import "_categoryStyle.scss";
+@import "_footer.scss";
 *{
     padding: 0;
     margin: 0;
