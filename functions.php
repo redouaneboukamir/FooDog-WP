@@ -3,7 +3,8 @@
         register_nav_menus(
             array(
                 'fooDog_socialNavList' => 'social networks',
-                'fooDog_mainNavList' => 'main navbar'
+                'fooDog_mainNavList' => 'main navbar',
+                'footer-menu' => 'Footer menu'
             )
         );
     }

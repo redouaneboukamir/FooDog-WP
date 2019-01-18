@@ -5,6 +5,7 @@ get_header();?>
     <div class="contentAllCategoryPub container">
         <div class="contentAllCategoryPost col-8">
     <?php
+    single_cat_title();
     if (have_posts()) :
             while (have_posts()) : the_post(); 
             ?>

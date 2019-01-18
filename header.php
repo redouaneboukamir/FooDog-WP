@@ -22,11 +22,11 @@
 <div class="fooDog_social col-12">    
     <nav class="fooDog_socialNav debug">
         <?php 
-        wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList debug')); 
+        // wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList debug')); 
         ?>
 
     <div class="fooDog_searchWindow">
-   
+        
     </div>
 </div>
 <!-- page layout -->
