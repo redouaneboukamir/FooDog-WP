@@ -281,6 +281,12 @@ Text Domain: FooDog-WP
   background: #262c3d;
 }
 
+.contentAllSingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .titleSingle {
   font-size: 1.5em;
   color: #555555;
@@ -313,6 +319,11 @@ Text Domain: FooDog-WP
   margin-top: 50px;
 }
 
+.mainSingle .singleContent article {
+  text-align: justify;
+  width: 100%;
+}
+
 .categorySingle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,6 +349,224 @@ Text Domain: FooDog-WP
 
 .categorySingle .post-categories li a {
   color: #ff8d69;
+}
+
+.contentSociauxLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 5px;
+  border: 1px solid #ececec;
+  background: #fafafa;
+}
+
+.contentSociauxLogo .farmerDog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: lightgray;
+  font-size: 0.8em;
+}
+
+.contentSociauxLogo .farmerDog .logoFarmer {
+  margin: auto;
+  font-size: 2em;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: white;
+  background: #ff8d69;
+  padding: 10px 15px;
+}
+
+.contentSociauxLogo .farmerDog .farmerText {
+  text-transform: uppercase;
+}
+
+.contentSociauxLogo .contentSociaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentSociauxLogo .contentSociaux .commentFarmer {
+  font-size: 0.8em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #6d6d6d;
+}
+
+.contentSociauxLogo .contentSociaux .commentFarmer i {
+  padding-right: 10px;
+}
+
+.contentSociauxLogo .contentSociaux .shareFarmer {
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.contentSociauxLogo .contentSociaux .sociauxFarmer {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+.contentSociauxLogo .contentSociaux .sociauxFarmer .farmerFacebook {
+  border-radius: 50%;
+  padding: 3px 10px;
+  margin: auto;
+  margin-right: 5px;
+  background: #9dc5fa;
+}
+
+.contentSociauxLogo .contentSociaux .sociauxFarmer .farmerTwitter {
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin: auto;
+  margin-right: 5px;
+  background: #60d1f5;
+}
+
+.contentSociauxLogo .contentSociaux .sociauxFarmer .farmerPinterest {
+  margin: 0 5px;
+  border-radius: 50%;
+  padding: 3px 10px;
+  margin: auto;
+  background: #ff3239;
+}
+
+.contentSociauxComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentSociauxComment .commentComment {
+  font-size: 0.8em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #6d6d6d;
+}
+
+.contentSociauxComment .commentComment i {
+  padding-right: 10px;
+}
+
+.contentSociauxComment .shareComment {
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.contentSociauxComment .SociauxComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentSociauxComment .commentFarmer {
+  font-size: 0.8em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #6d6d6d;
+}
+
+.contentSociauxComment .commentFacebook {
+  font-size: 0.8em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #9dc5fa;
+}
+
+.contentSociauxComment .commentTwitter {
+  font-size: 0.8em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #60d1f5;
+}
+
+.contentSociauxComment .commentPinterest {
+  font-size: 0.8em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ff3239;
 }
 
 .latestPost {
