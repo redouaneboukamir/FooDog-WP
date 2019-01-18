@@ -1,4 +1,7 @@
-<?php
+<?php add_theme_support('post-thumbnails'); 
+//permet d'activer l'upload d'un thumbnail lors de la création d'un article
+
+//Val 
     function register_my_menus() {
         register_nav_menus(
             array(
@@ -32,6 +35,7 @@
         wp_enqueue_script('js_script', get_template_directory_uri()."/assets/js/script.js");
     }
     add_action('enqueue_scripts', fooDog_enqueue_scripts());
+
     function count_post_visits() {
         if( is_single() ) {
         global $post;
@@ -51,3 +55,7 @@
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 ?>
+
+?>
+
+
