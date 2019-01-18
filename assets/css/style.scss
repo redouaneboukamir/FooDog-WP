@@ -4,8 +4,75 @@ Author: X-Force
 Author URI: http://foodog.com
 Description: becode project's theme
 */
+
 @import '_header.scss';
 
 .debug{
     border:red solid 1px;
 }
+
+//search pop-up
+@import 'stickyPost';
+
+$couleurOrange : #ff8d69;
+.fooDog_pop_up{
+    display: none;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color:red;
+}
+//header
+.fooDog_social{
+    z-index: 99999;
+    .fooDog_socialNav{
+        display:flex;
+        justify-content: flex-end;
+        .fooDog_socialNavList{
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            padding:10px;
+            margin:0;
+            li{
+                margin-left:10px;
+                a{
+                    color:black;
+                }//.a
+            }//.li
+        }//.fooDog_socialNavList
+    }//.fooDog_socialNav
+}//.fooDog_social
+
+.fooDog_content{
+    max-width: 75%;
+    margin: auto;
+}
+
+.header{
+    .fooDog_title{
+        display:flex;
+        justify-content: center;
+        .fooDog_name{
+            
+        }//.fooDogName
+    }//.fooDog_title
+        .fooDog_mainNav{
+ 
+            .fooDog_mainNavList{
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                justify-content: space-between;
+                margin:0;
+                padding:10px;
+                li{
+                    
+                    a{
+                        color:black;
+                    }//.a
+                }//li
+            }//.fooDog_mainNavList
+        }//.fooDog_mainNav
+
+}//.header

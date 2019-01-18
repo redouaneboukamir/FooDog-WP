@@ -10,6 +10,7 @@
 
 .fooDog_searchWindow{
     position: absolute;
+
     transform: translate(-50%, -50%);
     left:50%; top:50%; 
     background-color: rgb(190, 190, 190);
@@ -17,7 +18,11 @@
     border-radius: 10px;
 }//.fooDog_searchWindow
 
+
+}
+
 //header
+
 .fooDog_social{
     .fooDog_socialNav{
         display:flex;
@@ -54,10 +59,24 @@
 }//.menuAndSearch
 
 .header{
-    border-bottom: grey solid 2px;
+    
     .fooDog_title{
         display:flex;
         justify-content: center;
+        .fooDog_name{
+            font-size: 5em;
+            font-family: 'EB Garamond', serif;
+            a{
+                color: rgb(85, 85, 85);
+                text-decoration: none;
+                &:hover{
+                    opacity: 0.6;
+                    transition: all 0.3s;
+                }
+            
+        }
+
+    }
     }//.fooDog_title
     .navbar{
         width:100%;
@@ -65,15 +84,27 @@
     }
     .fooDog_main{
         width:100%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid lightgray;
         ul{
             margin: auto;
             padding-right: 0px;
             width: 80%;
             display: flex;
             justify-content: space-around;
+            text-transform: uppercase;
+  
             a{
+                width: 20%;
+                padding-bottom: 20px;
                 color:black;
                 margin:auto;
+                text-decoration: none;
+                &:hover{
+                    color:rgba(0, 0, 0,0.7);
+                    transition: all 0.3s;
+                    border-bottom:7px solid #ff8d69 ;
+                }
             }
         }
     }//.fooDog_main
@@ -86,10 +117,11 @@
 @media only screen and (max-width: 992px){
     .fooDog_main{
         li{
-            border:grey 1px solid;
+            // border:grey 1px solid;
             padding:5px;
             border-radius:5px;
             border-collapse: collapse;
+            
             a{
                 margin: auto;
             }//a
