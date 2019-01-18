@@ -3,9 +3,6 @@
 //permet d'activer l'upload d'un thumbnail lors de la création d'un article
 
 //Val 
-
-
-<?php
     function register_my_menus() {
         register_nav_menus(
             array(
