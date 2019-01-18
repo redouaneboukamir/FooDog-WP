@@ -605,6 +605,19 @@ Text Domain: FooDog-WP
   color: black;
 }
 
+.titleCat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0;
+  padding: 20px;
+  background: #eeeeee;
+  color: #646464;
+}
+
 .contentAllCategoryPub {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -756,14 +769,15 @@ footer {
 }
 
 .footercategories li {
+  margin-top: 2em;
   border-bottom: 1px solid #767979;
-  margin-top: 1em;
 }
 
 .footercategories li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .populartitle {

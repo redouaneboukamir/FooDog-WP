@@ -4,7 +4,7 @@
 $ourCurrentPage = get_query_var("paged");
 
 $latestPosts_args = array (
-    "posts_per_page" => 6,
+    "posts_per_page" => 4,
     "paged" => $ourCurrentPage,
     "orderby" => "date",
     "order"   => "DESC",
@@ -52,9 +52,12 @@ if (have_posts()) : ?>
         <?php 
                 
         endwhile; ?>
-        <?php else : ?>
+        <?php 
+            else : 
+            ?>
             <h1>AUNCUN POST</h1>
-        <?php endif; 
+        <?php 
+        endif; 
        ?>
     </div>
     <div class="contentPagination col-lg-8">
