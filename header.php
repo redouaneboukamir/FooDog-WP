@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>style.css">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
 <body>
 <!-- search pop-up-->
+
 <div class="fooDog_pop_up">
 
 </div>
@@ -27,13 +25,21 @@
 
     <div class="fooDog_searchWindow">
         
+
+<div class="fooDog_pop_up" id="fooDog_pop_up">
+    <div class="fooDog_searchWindow">
+        <!--temp-->
+        <p>in progress...</p><p style="cursor:pointer;" onclick="hide_pop_up()">Click here to hide</p>
+
     </div>
 </div>
 <!-- page layout -->
 <div class="fooDog_social col-12">    
-    <nav class="fooDog_socialNav">
-        <?php wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList')); ?>
-
+    <nav class="fooDog_socialNav">    
+        <?php wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList', 'container' => '')); ?>
+        <div class="searchIcon" onclick="search_pop_up()">
+            <i class="fas fa-search" ></i>
+        </div>
     </nav>
 </div>
 <div class="fooDog_content_header">
