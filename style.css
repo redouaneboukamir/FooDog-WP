@@ -636,6 +636,65 @@ Text Domain: FooDog-WP
           align-items: center;
 }
 
+.farmerDogSingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+
+.farmerDogSingle .logoFarmerSingle {
+  margin: auto;
+  font-size: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 30px;
+  color: white;
+  background: #ff8d69;
+  border-radius: 50%;
+}
+
+.farmerDogSingle h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.farmerDogSingle p {
+  font-size: 0.8em;
+}
+
+.allMightyLike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.allMightyLike .contentImgTitle {
+  height: 300px;
+}
+
+.allMightyLike .imageLike {
+  height: 80%;
+}
+
+.allMightyLike .imageLike img {
+  width: 100%;
+  height: 100%;
+}
+
+.allMightyLike .imageLike img:nth-child(1) {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .latestPost {
   margin-top: 50px;
 }

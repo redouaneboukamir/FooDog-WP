@@ -44,12 +44,47 @@
                             <div class="contentPreviousNext col-lg-12">
                                 
                                 <div class="contentPrevious">
-                                    <?php previous_post_link('%link', '< PREVIOUS ARTICLE ', TRUE); ?>
+                                   
                                     <?php previous_post_link('<strong>%link</strong>'); ?>
                                 </div>
                                 <div class="contentNext">
 
                                 </div>
+                            </div>
+                            <div class="farmerDogSingle col-12">
+                                <div class="logoFarmerSingle col-2"><i class="fas fa-dog"></i></div>
+                                    <section class="textFarmerSingle col-10">
+                                    <h3>The Farmer's Dog</h3>
+                                    <p>The Farmer’s Dog is the leading direct-to-consumer, fresh pet food company, offering customers 
+                                        and their pets the highest quality and convenience without retail markups. All human-grade 
+                                        meal plans are made to order, designed by veterinarians, and personalized to provide the ideal 
+                                        nutritional balance for every dog. Get started today at https://www.thefarmersdog.com/.</p>
+                                </section>
+                            </div>
+                            <div class="headerPost row col-12">
+                                <h6 class="col-4">you mighy also like</h6>
+                                <div class="borderHeaderPost col-8"></div>
+                            </div>
+                            <div class="allMightyLike col-lg-12">
+                                <?php
+                                    $recentPosts = new WP_Query();
+                                    $sticky = get_option('sticky_posts');
+                                    $args = array(
+                                        'posts_per_page' =>4,
+                                        'orderby' => 'date',
+                                        'order' => 'DESC',
+                                        'post__in' => $sticky
+                                        );
+                                    $recentPosts->query($args);
+                                    $i = 0;
+                                    while ( $i < 3 && $recentPosts->have_posts() ) : $recentPosts->the_post();	
+                                    $i++;
+                                ?>
+                                    <div class="contentImgTitle col-4">
+                                        <figure class="imageLike col-12"><?php the_post_thumbnail(); ?></figure>
+                                        <p><?php the_title(); ?></p>
+                                    </div>
+                                    <?php endwhile;?>
                             </div>
                         <div class="post-comments">
                             <?php 
