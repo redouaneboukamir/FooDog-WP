@@ -5,14 +5,37 @@ Author URI: http://foodog.com
 Description: becode project's theme
 */
 
-@import '_header.scss';
-
 .debug{
     border:red solid 1px;
 }
 
 //search pop-up
+@import 'header';
 @import 'stickyPost';
+@import 'single';
+@import 'loop';
+@import 'loop-views';
+@import 'category';
+
+$couleurOrange : #ff8d69;
+.contentAll{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentLoopViews{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.contenuLoopSticky{
+
+}
+.contenuLoop{
+
+}
 
 $couleurOrange : #ff8d69;
 .fooDog_pop_up{
