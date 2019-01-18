@@ -1,27 +1,26 @@
-<?php 
-    
-get_header();?>
+<?php get_header();?>
+
 <!-- <div class="contentAllAll"> -->
-    <div class="contentAllCategoryPub container">
+<div class="contentAllCategoryPub container">
         <div class="contentAllCategoryPost col-8">
     <?php
     if (have_posts()) :
             while (have_posts()) : the_post(); 
             ?>
-
         <!-- Ensemble du traitement et affichage de stickypost -->
         <?php 
                     $before = '<h4 class="titleCategory">';
                     $after = "</h4>";
                     ?>
-                    
                             <div class="contentCategoryPost ">
-                                
                                     <div class="categoryPost row"> 
                                         <figure class="imageCategory col-5"><?php 
                                         if(has_post_thumbnail()){
                                             
                                             the_post_thumbnail();
+                                        }
+                                        else{ //Place automatiquement un thumbnail, si aucun ne sont présent
+                                            echo('<img src="https://news.nationalgeographic.com/content/dam/news/2018/05/29/dog-baby-talk/01-dog-baby-talk-NationalGeographic_2283205.ngsversion.1527786004161.adapt.1900.1.jpg" alt="">');
                                         }
                                         
                                         ?></figure>
@@ -35,11 +34,8 @@ get_header();?>
                                             the_excerpt();
                                             ?>
                                         </div>
-                                    </div>
-                                    
+                                    </div>       
                             </div>
-                            
-                            
                             <?php endwhile;?>
                         </div>
                         <div class="pubCategory col-3">
@@ -59,11 +55,11 @@ get_header();?>
                         </div>
                         <figure><img src=""></figure>
                     </div>
-
-                        
-    </div>
-
+                    <div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
+                    <div class="nav-next alignright"><?php next_posts_link( 'Newer posts' ); ?></div>  
+    </div>          
     <?php endif;?>
+
+<?php get_footer(); ?>
     <!-- <div class="col-2">fzesv</div> -->
-<!-- </div> -->
-                            
+<!-- </div> -->                      
