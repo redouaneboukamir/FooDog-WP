@@ -1,5 +1,7 @@
 
-   </main>
+
+</main>
+
     </div>
 
      <footer>
@@ -19,6 +21,7 @@
                     <div><h5 class="populartitle">POPULAR POST</h5></div>
                     <?php
 
+
                 $recentPosts = new WP_Query();
 
                 $sticky = get_option('sticky_posts');
@@ -32,6 +35,7 @@
                 'post__in' => $sticky,
                 
                 );
+
 
                 $recentPosts->query($args);
 
@@ -63,6 +67,7 @@
 
 		<div class="col-4">
  			<h5 class="titleinstagram">INSTAGRAM</h5>
+
 
 			<div class="footerinstagram">
 
