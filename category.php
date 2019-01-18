@@ -64,7 +64,8 @@ get_header();?>
                         
     </div>
 
-    <?php endif;?>
+    <?php endif;
+    get_footer();?>
     <!-- <div class="col-2">fzesv</div> -->
 <!-- </div> -->
                             
