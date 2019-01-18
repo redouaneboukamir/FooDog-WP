@@ -239,6 +239,9 @@
     margin-bottom: 30px;
     .contentImgTitle{
         height: 300px;
+        a{
+            color: black;
+        }
         
     }
     .imageLike{
@@ -253,4 +256,7 @@
             height: 100%;
         }
     }
+}
+.post-comments{
+    margin-top: 100px;
 }

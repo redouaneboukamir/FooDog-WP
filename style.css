@@ -681,6 +681,10 @@ Text Domain: FooDog-WP
   height: 300px;
 }
 
+.allMightyLike .contentImgTitle a {
+  color: black;
+}
+
 .allMightyLike .imageLike {
   height: 80%;
 }
@@ -693,6 +697,10 @@ Text Domain: FooDog-WP
 .allMightyLike .imageLike img:nth-child(1) {
   margin-left: 0;
   padding-left: 0;
+}
+
+.post-comments {
+  margin-top: 100px;
 }
 
 .latestPost {

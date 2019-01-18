@@ -79,11 +79,13 @@
                                     $i = 0;
                                     while ( $i < 3 && $recentPosts->have_posts() ) : $recentPosts->the_post();	
                                     $i++;
-                                ?>
-                                    <div class="contentImgTitle col-4">
-                                        <figure class="imageLike col-12"><?php the_post_thumbnail(); ?></figure>
-                                        <p><?php the_title(); ?></p>
-                                    </div>
+                                    ?>
+                                    
+                                        <div class="contentImgTitle col-4">
+                                            <figure class="imageLike col-12"><?php the_post_thumbnail(); ?></figure>
+                                            <a href="<?php the_permalink()?>"><p><?php the_title(); ?></p></a>
+                                        </div>
+                                    
                                     <?php endwhile;?>
                             </div>
                         <div class="post-comments">
@@ -105,3 +107,4 @@
     </div>
     <div class="contentPub col-2">test</div>
 <!-- </div> -->
+<?php get_footer(); ?>
