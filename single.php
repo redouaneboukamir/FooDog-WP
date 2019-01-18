@@ -37,7 +37,7 @@
                                 
                             </div>
                             <div class="contentSubscribe col-lg-12">
-                                <h2>Subscribe to The Digest Newsletter</h2>
+                                <h2>Subscribe to The Digest Newsletters</h2>
                                 <p>Get health and wellness tips about your dog delivered to your inbox.</p>
                                 <div class="emailSubscribe">your email<span class="signup">Sign up</span></div>
                             </div>
@@ -47,7 +47,7 @@
                                     
                                 </div>
                                 <div class="contentNext">
-                                    
+
                                 </div>
                             </div>
                         <div class="post-comments">
