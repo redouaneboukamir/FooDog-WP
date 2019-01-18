@@ -1,6 +1,18 @@
 
 
-<?php if (have_posts()) : ?>
+<?php 
+$ourCurrentPage = get_query_var("paged");
+
+$latestPosts_args = array (
+    "posts_per_page" => 6,
+    "paged" => $ourCurrentPage,
+    "orderby" => "date",
+    "order"   => "DESC",
+    "ignore_sticky_posts" => 1,
+);
+
+$latestPosts = new WP_Query($latestPosts_args);
+if (have_posts()) : ?>
 <div class="latestPost row col-lg-8 col-sm-10 col-xs-12">
     <h6 class="col-3">lastest posts</h6>
     <div class="borderLastestPost col-lg-9 col-sm-10 col-xs-12"></div>
@@ -37,8 +49,20 @@
                 </div>
             </div>
 
-        <?php endwhile; ?>
+        <?php 
+                
+        endwhile; ?>
         <?php else : ?>
             <h1>AUNCUN POST</h1>
-        <?php endif; ?>
+        <?php endif; 
+       ?>
+    </div>
+    <div class="contentPagination col-lg-8">
+        <span class="pagination col-12"><?php
+        echo paginate_links(array(
+            "total" => $latestPosts->max_num_pages,
+            "prev_text" => __("<", "textdomain"),
+            "next_text" => __(">", "textdomain"),
+            ));
+            ?></span>
     </div>

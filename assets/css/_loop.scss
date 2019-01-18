@@ -71,3 +71,26 @@
 
     }
 }
+.contentPagination{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    .pagination{
+        display: flex;
+        justify-content: center;
+        a{
+            color: #303336;
+            text-decoration: none;
+        }
+        span{
+            background: #303336;
+            color: white;
+        }
+        a, span{
+            margin: 0.5em 0.5em;
+            padding: 0.5em 1em;
+            border: 1px solid darkgray;
+            border-radius: 50%;
+        }
+
+    }
+}

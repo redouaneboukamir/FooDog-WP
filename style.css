@@ -437,6 +437,37 @@ Text Domain: FooDog-WP
   border-bottom: 7px solid #ff8d69;
 }
 
+.contentPagination {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.contentPagination .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contentPagination .pagination a {
+  color: #303336;
+  text-decoration: none;
+}
+
+.contentPagination .pagination span {
+  background: #303336;
+  color: white;
+}
+
+.contentPagination .pagination a, .contentPagination .pagination span {
+  margin: 0.5em 0.5em;
+  padding: 0.5em 1em;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+}
+
 .contentAllArticleViews {
   display: -webkit-box;
   display: -ms-flexbox;
