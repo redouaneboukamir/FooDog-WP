@@ -399,7 +399,6 @@ Text Domain: FooDog-WP
 
 .contentSociauxLogo .contentSociaux .commentFarmer {
   font-size: 0.8em;
-  padding: 5px 10px;
   text-transform: uppercase;
   color: white;
   border-radius: 5px;
@@ -413,6 +412,7 @@ Text Domain: FooDog-WP
       -ms-flex-align: center;
           align-items: center;
   background: #6d6d6d;
+  padding: 5px 10px;
 }
 
 .contentSociauxLogo .contentSociaux .commentFarmer i {
@@ -462,11 +462,17 @@ Text Domain: FooDog-WP
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px 0;
 }
 
 .contentSociauxComment .commentComment {
   font-size: 0.8em;
-  padding: 5px 10px;
   text-transform: uppercase;
   color: white;
   border-radius: 5px;
@@ -480,6 +486,7 @@ Text Domain: FooDog-WP
       -ms-flex-align: center;
           align-items: center;
   background: #6d6d6d;
+  padding: 5px 10px;
 }
 
 .contentSociauxComment .commentComment i {
@@ -499,7 +506,6 @@ Text Domain: FooDog-WP
 
 .contentSociauxComment .commentFarmer {
   font-size: 0.8em;
-  padding: 5px 10px;
   text-transform: uppercase;
   color: white;
   border-radius: 5px;
@@ -516,8 +522,8 @@ Text Domain: FooDog-WP
 }
 
 .contentSociauxComment .commentFacebook {
+  padding: 5px 25px;
   font-size: 0.8em;
-  padding: 5px 10px;
   text-transform: uppercase;
   color: white;
   border-radius: 5px;
@@ -534,8 +540,8 @@ Text Domain: FooDog-WP
 }
 
 .contentSociauxComment .commentTwitter {
+  padding: 5px 25px;
   font-size: 0.8em;
-  padding: 5px 10px;
   text-transform: uppercase;
   color: white;
   border-radius: 5px;
@@ -552,8 +558,8 @@ Text Domain: FooDog-WP
 }
 
 .contentSociauxComment .commentPinterest {
+  padding: 5px 25px;
   font-size: 0.8em;
-  padding: 5px 10px;
   text-transform: uppercase;
   color: white;
   border-radius: 5px;
@@ -567,6 +573,67 @@ Text Domain: FooDog-WP
       -ms-flex-align: center;
           align-items: center;
   background: #ff3239;
+}
+
+.contentSubscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentSubscribe h2 {
+  font-size: 2.5em;
+}
+
+.contentSubscribe p {
+  font-size: 0.9em;
+}
+
+.contentSubscribe .emailSubscribe {
+  width: 80%;
+  padding-left: 20px;
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: darkgray;
+  margin-bottom: 20px;
+}
+
+.contentSubscribe .emailSubscribe .signup {
+  font-weight: bold;
+  background: #ff8d69;
+  height: 100%;
+  padding: 15px 10%;
+  color: white;
+}
+
+.contentPreviousNext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .latestPost {

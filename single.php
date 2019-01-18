@@ -30,11 +30,25 @@
                         <div class="contentSociauxComment col-lg-12">
                             <span class="shareComment">share </span>
                                 <span class="commentComment"><i class="fas fa-comment"></i>comment</span>
-                                <span class="sociauxComment">
+                                
                                     <div class="commentFacebook"><i class="fab fa-facebook-f"></i>Share</div>
                                     <div class="commentTwitter"><i class="fab fa-twitter"></i>Tweet</div>
                                     <div class="commentPinterest"><i class="fab fa-pinterest-p"></i>Pint it</div>
-                                </span>
+                                
+                            </div>
+                            <div class="contentSubscribe col-lg-12">
+                                <h2>Subscribe to The Digest Newsletter</h2>
+                                <p>Get health and wellness tips about your dog delivered to your inbox.</p>
+                                <div class="emailSubscribe">your email<span class="signup">Sign up</span></div>
+                            </div>
+                            <div class="contentPreviousNext col-lg-12">
+                                
+                                <div class="contentPrevious">
+                                    
+                                </div>
+                                <div class="contentNext">
+                                    
+                                </div>
                             </div>
                         <div class="post-comments">
                             <?php 

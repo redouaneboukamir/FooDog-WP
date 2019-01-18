@@ -1,6 +1,6 @@
 @mixin DesignRectangle($color){
     font-size: 0.8em;
-    padding:5px 10px;
+    
     text-transform: uppercase;
     color: white;
     border-radius: 5px;
@@ -96,6 +96,7 @@
                 align-items: center;
                 .commentFarmer{
                     @include DesignRectangle(rgb(109, 109, 109));
+                    padding:5px 10px;
                     i{
                         padding-right: 10px;
                     }
@@ -136,8 +137,12 @@
 }
 .contentSociauxComment{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
     .commentComment{
         @include DesignRectangle(rgb(109, 109, 109));
+        padding:5px 10px;
         i{
             padding-right: 10px;
         }
@@ -148,18 +153,57 @@
     }
     .SociauxComment{
         display: flex;
+       
     }
     .commentFarmer{
         @include DesignRectangle(rgb(109, 109, 109));
     }
     .commentFacebook{
+        padding: 5px 25px;
         @include DesignRectangle(#9dc5fa);
         
     }
     .commentTwitter{
+        padding: 5px 25px;
         @include DesignRectangle(#60d1f5);
     }
     .commentPinterest{
+        padding: 5px 25px;
         @include DesignRectangle(#ff3239);
     }
+}
+.contentSubscribe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 2.5em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    .emailSubscribe{
+        width: 80%;
+        padding-left: 20px;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: darkgray;
+        margin-bottom: 20px;
+        .signup{
+            font-weight:bold ;
+            background: #ff8d69;
+            height: 100%;
+            padding: 15px 10%;
+            color: white;
+            
+        }
+    }
+}
+.contentPreviousNext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
