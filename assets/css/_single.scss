@@ -205,8 +205,44 @@
 }
 .contentPreviousNext{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+    .contentPrevious{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contentNext{
+        border-left: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        color: black;
+        span{
+            text-align: right;
+        }
+    }
+            .descrLien{
+                a{
+                    color: lightgray;
+                    font-size: 0.6em;
+                    text-transform: uppercase;
+    
+                }
+            }
+            .lien{
+                padding: 0 !important;
+                a{
+                    color: rgb(109, 108, 108);
+                    font-weight: bold;
+                    font-size: 0.8em
+                }
+               
+            }
 }
 
 

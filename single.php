@@ -43,12 +43,14 @@
                             </div>
                             <div class="contentPreviousNext col-lg-12">
                                 
-                                <div class="contentPrevious">
+                                <div class="contentPrevious col-6">
                                    
-                                    <?php previous_post_link('<strong>%link</strong>'); ?>
+                                    <span class="descrLien"><?php  previous_post_link('%link', '< PREVIOUS ARTICLE ', TRUE);?></span>
+                                    <span class="lien col-12"><?php previous_post_link('%link'); ?></span>
                                 </div>
-                                <div class="contentNext">
-
+                                <div class="contentNext col-6">
+                                    <span class="descrLien"><?php  next_post_link('%link', 'NEXT ARTICLE >', TRUE);?></span>
+                                    <span class="lien col-12"><?php next_post_link('%link'); ?></span>
                                 </div>
                             </div>
                             <div class="farmerDogSingle col-12">
