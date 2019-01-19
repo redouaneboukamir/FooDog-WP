@@ -92,16 +92,42 @@
                             </div>
                         <div class="post-comments">
                             <?php 
-                            comments_template(); 
+                                $args = array(
+                                    'fields' => apply_filters(
+                                        'comment_form_default_fields', array(
+                                            'comment_field' => '<p class="comment-form-comment">' .
+                                        // '<label for="comment">' . __( 'Let us know what you have to say:' ) . '</label>' .
+                                        '<textarea class="descriComentForm" id="comment" name="comment" placeholder="Write your comment here .." cols="45" rows="8" aria-required="true"></textarea>' .
+                                        '</p>',
+                                        '<div class=contentNameEmail>',
+                                        'comment_notes_after' => '',
+                                            'author' =>'<p class="comment-form-author col-3">' . '<input id="author" placeholder="Name.." name="author" type="text" value="' .
+                                                esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />'.
+                                                // '<label for="author">' . __( '' ) . '</label> ' .
+                                                ( $req ? '<span class="required">*</span>' : '' )  .
+                                                '</p>'
+                                                ,
+                                            'email'  => '<p class="comment-form-email col-3">' . '<input id="email" placeholder="Email.." name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+                                                '" size="30"' . $aria_req . ' />'  .
+                                                // '<label for="email">' . __( '' ) . '</label> ' .
+                                                // ( $req ? '<span class="required">*</span>' : '' ) 
+                                                //  .
+                                                '</p>',
+                                            'url'    => '<p class="comment-form-url col-3">' .
+                                             '<input id="url" name="url" placeholder="Website.." type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> ' .
+                                            // '<label for="url">' . __( '', 'domainreference' ) . '</label>' .
+                                               '</p>',
+                                               '</div>'
+                                        )
+                                    ),
+                                    
+                                    'title_reply' => '<div class="crunchify-text titreComentForm"> <h5>Leave a response</h5></div>'
+                                );
+
+
+                            comment_form($args, $post_id) ;
                             ?> 
-                            <!-- Posté le  -->
-                            <?php 
-                            // the_date(); 
-                            ?> 
-                            <!-- dans  -->
-                            <?php 
-                            // the_category(', '); 
-                            ?>
+
                     </div>
                 </div>
             <?php endwhile; ?>

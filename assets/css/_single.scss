@@ -296,3 +296,18 @@
 .post-comments{
     margin-top: 100px;
 }
+.comment-respond{
+    display: flex;
+    flex-direction: column;
+    .commentNameEmail{
+        display: flex !important;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        .descriComentForm{
+            color: red;
+
+        }
+    }
+}

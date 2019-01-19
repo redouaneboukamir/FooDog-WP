@@ -46,5 +46,41 @@
         return 20;
     }
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+    // Modify comments header text in comments
+add_filter( 'genesis_title_comments', 'child_title_comments');
+function child_title_comments() {
+    return __(comments_number( '<h3>No Responses</h3>', '<h3>1 Response</h3>', '<h3>% Responses...</h3>' ), 'genesis');
+}
+ 
+// Unset URL from comment form
+function crunchify_move_comment_form_below( $fields ) { 
+    $comment_field = $fields['comment']; 
+    unset( $fields['comment'] ); 
+    $fields['comment'] = $comment_field; 
+    return $fields; 
+} 
+add_filter( 'comment_form_fields', 'crunchify_move_comment_form_below' ); 
+ 
+// Add placeholder for Name and Email
+function modify_comment_form_fields($fields){
+    $fields['author'] = '<p class="comment-form-author">' . '<input id="author" placeholder="Your Name (No Keywords)" name="author" type="text" value="' .
+                esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />'.
+                '<label for="author">' . __( 'Your Name' ) . '</label> ' .
+                ( $req ? '<span class="required">*</span>' : '' )  .
+                '</p>';
+    $fields['email'] = '<p class="comment-form-email">' . '<input id="email" placeholder="your-real-email@example.com" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+                '" size="30"' . $aria_req . ' />'  .
+                '<label for="email">' . __( 'Your Email' ) . '</label> ' .
+                ( $req ? '<span class="required">*</span>' : '' ) 
+                 .
+                '</p>';
+    $fields['url'] = '<p class="comment-form-url">' .
+             '<input id="url" name="url" placeholder="http://your-site-name.com" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> ' .
+            '<label for="url">' . __( 'Website', 'domainreference' ) . '</label>' .
+               '</p>';
+    
+    return $fields;
+}
+add_filter('comment_form_default_fields','modify_comment_form_fields');
 
 ?>

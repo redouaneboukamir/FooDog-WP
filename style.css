@@ -756,6 +756,36 @@ Text Domain: FooDog-WP
   margin-top: 100px;
 }
 
+.comment-respond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comment-respond .commentNameEmail {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.comment-respond form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comment-respond form .descriComentForm {
+  color: red;
+}
+
 .latestPost {
   margin-top: 50px;
 }
