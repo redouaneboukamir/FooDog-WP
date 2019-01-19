@@ -63,21 +63,21 @@ add_filter( 'comment_form_fields', 'crunchify_move_comment_form_below' );
  
 // Add placeholder for Name and Email
 function modify_comment_form_fields($fields){
-    $fields['author'] = '<p class="comment-form-author">' . '<input id="author" placeholder="Your Name (No Keywords)" name="author" type="text" value="' .
+    $fields['author'] = '<div class="commentNameEmail"><p class="comment-form-author  col-4">' . '<input class="col-12" id="author" placeholder="Name.." name="author" type="text" value="' .
                 esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />'.
-                '<label for="author">' . __( 'Your Name' ) . '</label> ' .
+                '<label for="author">' . __( "" ) . '</label> ' .
                 ( $req ? '<span class="required">*</span>' : '' )  .
                 '</p>';
-    $fields['email'] = '<p class="comment-form-email">' . '<input id="email" placeholder="your-real-email@example.com" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+    $fields['email'] = '<p class="comment-form-email  col-4">' . '<input class="col-12" id="email" placeholder="Email.." name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
                 '" size="30"' . $aria_req . ' />'  .
-                '<label for="email">' . __( 'Your Email' ) . '</label> ' .
+                '<label for="email">' . __( '' ) . '</label> ' .
                 ( $req ? '<span class="required">*</span>' : '' ) 
                  .
                 '</p>';
-    $fields['url'] = '<p class="comment-form-url">' .
-             '<input id="url" name="url" placeholder="http://your-site-name.com" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> ' .
-            '<label for="url">' . __( 'Website', 'domainreference' ) . '</label>' .
-               '</p>';
+    $fields['url'] = '<p class="comment-form-url col-4" >' .
+             '<input id="url" name="url" placeholder="Website.." class="col-12" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> ' .
+            '<label for="url">' . __( '', 'domainreference' ) . '</label>' .
+               '</p> </div>';
     
     return $fields;
 }

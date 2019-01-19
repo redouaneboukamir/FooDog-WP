@@ -93,6 +93,7 @@
     }
             .contentSociaux{
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 .commentFarmer{
                     @include DesignRectangle(rgb(109, 109, 109));
@@ -139,6 +140,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin: 60px 0;
     .commentComment{
         @include DesignRectangle(rgb(109, 109, 109));
@@ -168,7 +170,7 @@
         @include DesignRectangle(#60d1f5);
     }
     .commentPinterest{
-        padding: 5px 25px;
+        padding: 5px 15px;
         @include DesignRectangle(#ff3239);
     }
 }
@@ -272,6 +274,7 @@
 
 .allMightyLike{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     .contentImgTitle{
         height: 300px;
@@ -299,15 +302,32 @@
 .comment-respond{
     display: flex;
     flex-direction: column;
+    h5{
+        color: black;
+        text-transform: uppercase;
+        font-size:0.6em;
+        font-weight:bold;
+    }
     .commentNameEmail{
-        display: flex !important;
-    }
-    form{
         display: flex;
-        flex-direction: column;
-        .descriComentForm{
-            color: red;
-
+        .comment-form-author{
+            padding: 0 !important;
         }
+        .comment-form-url{
+            padding: 0 !important;
+        }
+        
     }
+    // form{
+    //     display: flex;
+    //     flex-direction: column;
+
+    // }
+    .form-submit{
+        // input{
+        //     background: red;
+
+        // }
+    }
+
 }

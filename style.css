@@ -392,6 +392,8 @@ Text Domain: FooDog-WP
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -468,6 +470,8 @@ Text Domain: FooDog-WP
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 60px 0;
 }
 
@@ -558,7 +562,7 @@ Text Domain: FooDog-WP
 }
 
 .contentSociauxComment .commentPinterest {
-  padding: 5px 25px;
+  padding: 5px 15px;
   font-size: 0.8em;
   text-transform: uppercase;
   color: white;
@@ -727,6 +731,8 @@ Text Domain: FooDog-WP
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -766,24 +772,25 @@ Text Domain: FooDog-WP
           flex-direction: column;
 }
 
-.comment-respond .commentNameEmail {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+.comment-respond h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: bold;
 }
 
-.comment-respond form {
+.comment-respond .commentNameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.comment-respond form .descriComentForm {
-  color: red;
+.comment-respond .commentNameEmail .comment-form-author {
+  padding: 0 !important;
+}
+
+.comment-respond .commentNameEmail .comment-form-url {
+  padding: 0 !important;
 }
 
 .latestPost {
