@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <!-- <div class=contentAllSingle> -->
+    <!-- <div class="contentAllSingle col-12"> -->
         <div class="mainSingle container col-lg-10 col-sm-12 col-xs-12">
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
@@ -133,6 +133,6 @@
             <?php endwhile; ?>
             <?php endif; ?>
     </div>
-    <div class="contentPub col-2">test</div>
-<!-- </div> -->
+    <!-- <div class="contentPub col-2">test</div>
+</div> -->
 <?php get_footer(); ?>

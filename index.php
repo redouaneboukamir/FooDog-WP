@@ -1,5 +1,7 @@
 <?php 
 get_header();
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("rechercher") ) : 
+endif;
 ?>
 <div class="contentLoopViews col-10">
 <?php get_template_part('loop','views');?>

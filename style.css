@@ -220,31 +220,6 @@ Text Domain: FooDog-WP
   border-bottom: 7px solid #ff8d69;
 }
 
-.contentStickyPost .stickyPost .contentArticleSticky .contentShare {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.contentStickyPost .stickyPost .contentArticleSticky .contentShare .shareIcon {
-  border: 1px solid lightgray;
-  padding: 7px 10px;
-  border-radius: 50%;
-}
-
-.contentStickyPost .stickyPost .contentArticleSticky .contentShare .shareText {
-  padding-left: 5px;
-  color: lightgray;
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-
 .pubSticky .contentSociaux i, .pubSticky .contentSociaux span {
   padding-left: 10px;
 }
@@ -795,7 +770,7 @@ Text Domain: FooDog-WP
 
 .comment-respond .submitForm input {
   content: "leave a coment";
-  padding: 5px 5px;
+  padding: 15px 15px;
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: bold;
@@ -1346,6 +1321,31 @@ footer {
 .contentLoopViews {
   margin-top: 20px;
   margin-bottom: 50px;
+}
+
+.contentShare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contentShare .shareIcon {
+  border: 1px solid lightgray;
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+
+.contentShare .shareText {
+  padding-left: 5px;
+  color: lightgray;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 
 .fooDog_pop_up {

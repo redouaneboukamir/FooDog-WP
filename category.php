@@ -35,6 +35,10 @@ get_header();?>
                                             // the_content($more,$aftermore); 
                                             the_excerpt();
                                             ?>
+                                            <div class="contentShare">
+                                        <span class="shareIcon"><i class="fas fa-share"></i></span>
+                                        <span class="shareText">Share</span>
+                                    </div>
                                         </div>
                                     </div>
                                     
