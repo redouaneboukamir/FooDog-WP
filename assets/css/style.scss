@@ -117,6 +117,39 @@ $couleurOrange : #ff8d69;
         }//.fooDog_mainNav
 
 
+    }//.header
+    .search-widget{
+        position: absolute;
+        transform: translate(50vh,50vh);
+        display: none;
+        .contentFormSearch{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            border-radius: 20px;
+            background: lightgray;
+            padding: 0px 30px;
 
+        }
+        .champRecherche{
 
-}//.header
+            width: 20em;
+        }
+        .submitRecherche{
+            margin-left: 1em;
+            width: 10em;
+            background: rgb(63, 63, 63);
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        input{
+            border:1px solid rgb(117, 117, 117);
+            height: 3em;
+            border-radius: 20px;
+
+        }
+    }

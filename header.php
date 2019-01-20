@@ -5,7 +5,7 @@
     <meta type="description" content="<?php bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>style.css">
@@ -13,7 +13,7 @@
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body id="body">
 <!-- search pop-up-->
 <div class="fooDog_pop_up">
 
@@ -35,13 +35,13 @@
         <?php wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList')); ?>
     </nav>
     <?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
-     <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+     <!-- <div id="header-widget-area" class="nwa-header-widget widget-area search-widget" role="complementary"> -->
      <?php dynamic_sidebar( 'new-widget-area' ); ?>
-     </div>
+     <!-- </div> -->
      <?php endif; ?>
 </div>
 <div class="fooDog_content_header">
-    <header class="header">
+    <header class="header" id="header">
         <div class="row">
             <div class="fooDog_title col-12">
             <h1 class="fooDog_name"><a href="<?php echo get_option('home'); ?>/" ><?php bloginfo('name'); ?></a></h1>
@@ -69,6 +69,6 @@
         </div>
 
     </header>
-    <main class="contentAll">
+    <main class="contentAll" id="main">
 
   

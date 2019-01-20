@@ -1422,4 +1422,47 @@ footer {
 .header .fooDog_mainNav .fooDog_mainNavList li a {
   color: black;
 }
+
+.search-widget {
+  position: absolute;
+  -webkit-transform: translate(50vh, 50vh);
+          transform: translate(50vh, 50vh);
+  display: none;
+}
+
+.search-widget .contentFormSearch {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background: lightgray;
+  padding: 0px 30px;
+}
+
+.search-widget .champRecherche {
+  width: 20em;
+}
+
+.search-widget .submitRecherche {
+  margin-left: 1em;
+  width: 10em;
+  background: #3f3f3f;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.search-widget input {
+  border: 1px solid #757575;
+  height: 3em;
+  border-radius: 20px;
+}
 /*# sourceMappingURL=style.css.map */
