@@ -1,7 +1,6 @@
-<div class="latestPost row col-lg-8 col-sm-10 col-xs-12">
-    <h6 class="col-3">lastest posts</h6>
-    <div class="borderLastestPost col-lg-9 col-sm-10 col-xs-12"></div>
-</div>
+<?php get_header() ?>
+<span class="titleCat col-12"><h2>Recherche : <?php echo get_search_query();?></h2></span>
+
     <div class="contentAllArticle col-8">
         <?php while (have_posts()) : the_post(); ?>
         
@@ -36,7 +35,7 @@
 
         <?php 
                 
-        endwhile; ?>
+        endwhile; get_footer();?>
  
        
     </div>
