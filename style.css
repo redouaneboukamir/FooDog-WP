@@ -204,6 +204,13 @@ Text Domain: FooDog-WP
   background: #262c3d;
 }
 
+.widgetPub {
+  margin-top: 20px;
+}
+.widgetPub img {
+  width: 100%;
+}
+
 .contentAllSingle {
   display: flex;
 }

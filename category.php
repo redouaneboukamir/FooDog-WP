@@ -62,7 +62,11 @@ get_header();?>
                                     <span>Instagram</span>
                             </div>
                         </div>
-                        <figure><img src=""></figure>
+                        <?php if ( is_active_sidebar( 'new-widget-pub' ) ) : ?>
+                        <!-- <div id="header-widget-area" class="nwa-header-widget widget-area search-widget" role="complementary"> -->
+                        <?php dynamic_sidebar( 'new-widget-pub' ); ?>
+                        <!-- </div> -->
+                        <?php endif; ?>
                     </div>
 
                         
