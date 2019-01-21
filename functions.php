@@ -115,5 +115,19 @@ function my_search_form( $form ) {
     return $form;
 }
 add_filter( 'get_search_form', 'my_search_form', 100 );
+
+function image_widgets_init() {
  
+    register_sidebar( array(
+   
+    'name' => 'Pub',
+    'id' => 'imageWidget',
+    'before_widget' => '<div class="imageWidget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2 class="nwa-title">',
+    'after_title' => '</h2>',
+    ) );
+   }
+   
+   add_action( 'widgets_init', 'image_widgets_init' );
 ?>

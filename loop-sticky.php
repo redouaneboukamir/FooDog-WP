@@ -70,7 +70,11 @@
                                     <span>Instagram</span>
                             </div>
                         </div>
-                        <figure><img src=""></figure>
+                        <?php if ( is_active_sidebar( 'imageWidget' ) ) : ?>
+                        <!-- <div id="header-widget-area" class="nwa-header-widget widget-area search-widget" role="complementary"> -->
+                        <?php dynamic_sidebar( 'imageWidget' ); ?>
+                        <!-- </div> -->
+                        <?php endif; ?>
                     </div>
 
 </div>

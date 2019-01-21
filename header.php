@@ -35,7 +35,7 @@
         <?php wp_nav_menu(array('theme_location' => 'fooDog_socialNavList', 'menu_class' => 'fooDog_socialNavList')); ?>
     </nav>
 
-        <?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
+     <?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
      <!-- <div id="header-widget-area" class="nwa-header-widget widget-area search-widget" role="complementary"> -->
      <?php dynamic_sidebar( 'new-widget-area' ); ?>
      <!-- </div> -->
