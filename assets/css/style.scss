@@ -1,0 +1,155 @@
+
+/*
+Theme Name: FooDog-WP
+Description: FooDog theme
+Author: X-force
+Author URI: http://example.com
+
+Version: 2.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: FooDog-WP
+*/
+@import 'header';
+@import 'stickyPost';
+@import 'single';
+@import 'loop';
+@import 'loop-views';
+@import 'category';
+@import 'footer';
+
+$couleurOrange : #ff8d69;
+.contentAll{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentLoopViews{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.contentShare{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .shareIcon{
+        border: 1px solid lightgray;
+        padding: 7px 10px;
+        border-radius: 50%;
+    }
+    .shareText{
+        padding-left: 5px;
+        color: lightgray;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+}
+.contenuLoopSticky{
+
+}
+.contenuLoop{
+
+}
+
+.fooDog_pop_up{
+    display: none;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    
+}
+//header
+.fooDog_social{
+    z-index: 9999;
+    .fooDog_socialNav{
+        display:flex;
+        justify-content: flex-end;
+        .fooDog_socialNavList{
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            padding:10px;
+            margin:0;
+            li{
+                margin-left:10px;
+                a{
+                    color:black;
+                    
+                }//.a
+            }//.li
+        }//.fooDog_socialNavList
+    }//.fooDog_socialNav
+}//.fooDog_social
+
+.fooDog_content{
+    max-width: 75%;
+    margin: auto;
+}
+
+.header{
+    .fooDog_title{
+        display:flex;
+        justify-content: center;
+        .fooDog_name{
+            
+        }//.fooDogName
+    }//.fooDog_title
+        .fooDog_mainNav{
+ 
+            .fooDog_mainNavList{
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                justify-content: space-between;
+                margin:0;
+                padding:10px;
+                li{
+                    
+                    a{
+                        color:black;
+                    }//.a
+                }//li
+            }//.fooDog_mainNavList
+        }//.fooDog_mainNav
+
+
+    }//.header
+    .search-widget{
+        position: absolute;
+        transform: translate(50vh,50vh);
+        display: none;
+        .contentFormSearch{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            border-radius: 20px;
+            background: lightgray;
+            padding: 0px 30px;
+
+        }
+        .champRecherche{
+
+            width: 20em;
+        }
+        .submitRecherche{
+            margin-left: 1em;
+            width: 10em;
+            background: rgb(63, 63, 63);
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        input{
+            border:1px solid rgb(117, 117, 117);
+            height: 3em;
+            border-radius: 20px;
+
+        }
+    }

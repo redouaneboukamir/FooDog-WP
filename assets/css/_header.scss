@@ -1,0 +1,110 @@
+//search pop-up
+.fooDog_pop_up{
+    z-index: 2;
+    display: none;
+    width:100%;
+    height: 100%;
+    position: absolute;
+
+}
+//header
+
+.fooDog_social{
+    z-index: 99999;
+    .fooDog_socialNav{
+        display:flex;
+        justify-content: flex-end;
+        .fooDog_socialNavList{
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            padding:10px;
+            margin:0;
+            li{
+                margin-left:10px;
+                a{
+                    color:black;
+                }//.a
+            }//.li
+        }//.fooDog_socialNavList
+    }//.fooDog_socialNav
+}//.fooDog_social
+
+.fooDog_content_header{
+    max-width: 75%;
+    margin: auto;
+}
+
+.header{
+    
+    .fooDog_title{
+        display:flex;
+        justify-content: center;
+        .fooDog_name{
+            font-size: 5em;
+            font-family: 'EB Garamond', serif;
+            a{
+                color: rgb(85, 85, 85);
+                text-decoration: none;
+                &:hover{
+                    opacity: 0.6;
+                    transition: all 0.3s;
+                }
+            
+        }
+
+    }
+    }//.fooDog_title
+    .navbar{
+        width:100%;
+        margin:10px;
+    }
+    .fooDog_main{
+        width:100%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid lightgray;
+        ul{
+            margin: auto;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            text-transform: uppercase;
+  
+            a{
+                width: 20%;
+                padding-bottom: 20px;
+                color:black;
+                margin:auto;
+                text-decoration: none;
+                &:hover{
+                    color:rgba(0, 0, 0,0.7);
+                    transition: all 0.3s;
+                    border-bottom:7px solid #ff8d69 ;
+                }
+            }
+        }
+    }
+    .navbar-toggler{
+        color:black;
+    }
+}//.header
+
+//media header
+@media only screen and (max-width: 992px){
+    .fooDog_main{
+        li{
+            // border:grey 1px solid;
+            padding:5px;
+            border-radius:5px;
+            border-collapse: collapse;
+            
+            a{
+                margin: auto;
+            }
+        }
+    }
+}
+
+.debug{
+    width:100%;
+}

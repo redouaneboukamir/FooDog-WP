@@ -1,0 +1,340 @@
+@mixin DesignRectangle($color){
+    font-size: 0.8em;
+    
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $color;
+}
+
+.contentAllSingle{
+    display: flex;
+}
+
+.titleSingle{
+    font-size: 1.5em;
+    color: rgb(85, 85, 85);
+    text-transform: uppercase;
+    text-align: center;
+    margin:10px 15px;
+    margin-bottom: 50px;
+}
+.imageSingle{
+    img{
+        width: 100%;
+       height: 500px;
+    }
+}
+.mainSingle{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .singleContent{
+        margin-top: 50px;
+        article{
+            text-align: justify;
+            width: 100%;
+        }
+        
+    }
+}
+.categorySingle{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+            font-size: 0.8em;
+            .post-categories{
+                padding-left: 0;
+                display: flex;        
+                list-style-type: none;
+                li{
+                    padding-left: 5px;
+                    a{
+                        color: $couleurOrange;
+
+                    }
+                }
+            }
+        
+}
+.contentSociauxLogo{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 5px;
+    border: 1px solid rgb(236, 236, 236);
+    background: rgb(250, 250, 250);
+    .farmerDog{
+        display: flex;
+        align-items: center;
+        color: lightgray;
+        font-size: 0.8em;
+        .logoFarmer{
+            margin: auto;
+            font-size: 2em;
+            margin-right: 10px;
+            border-radius: 50%;
+            color: white;
+            background: #ff8d69;
+            padding: 10px 15px;
+            
+        }
+        .byFarmer{
+
+        }
+        .farmerText{
+            text-transform: uppercase;
+            
+        }
+    }
+            .contentSociaux{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                .commentFarmer{
+                    @include DesignRectangle(rgb(109, 109, 109));
+                    padding:5px 10px;
+                    i{
+                        padding-right: 10px;
+                    }
+                }
+                .shareFarmer{
+                    padding-left: 20px;
+                    text-transform: uppercase;
+                }
+                .sociauxFarmer{
+                    padding:0 20px;
+                    display: flex;
+                    justify-content: space-around;
+                    color: white;
+                    .farmerFacebook{
+                        border-radius: 50%; 
+                        padding: 3px 10px;
+                        margin: auto;
+                        margin-right: 5px;
+                        background: #9dc5fa;    
+                    }
+                    .farmerTwitter{
+                        border-radius: 50%;  
+                        padding: 5px 10px;
+                        margin: auto;
+                        margin-right: 5px;
+                        background: #60d1f5;   
+                    }
+                    .farmerPinterest{
+                        margin: 0 5px;
+                        border-radius: 50%;   
+                        padding: 3px 10px;
+                        margin: auto;
+                       
+                        background: #ff3239;  
+                    }
+                }
+            }
+}
+.contentSociauxComment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px 0;
+    .commentComment{
+        @include DesignRectangle(rgb(109, 109, 109));
+        padding:5px 10px;
+        i{
+            padding-right: 10px;
+        }
+    }
+    .shareComment{
+        padding-left: 20px;
+        text-transform: uppercase;
+    }
+    .SociauxComment{
+        display: flex;
+       
+    }
+    .commentFarmer{
+        @include DesignRectangle(rgb(109, 109, 109));
+    }
+    .commentFacebook{
+        padding: 5px 25px;
+        @include DesignRectangle(#9dc5fa);
+        
+    }
+    .commentTwitter{
+        padding: 5px 25px;
+        @include DesignRectangle(#60d1f5);
+    }
+    .commentPinterest{
+        padding: 5px 15px;
+        @include DesignRectangle(#ff3239);
+    }
+}
+.contentSubscribe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 2.5em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    .emailSubscribe{
+        width: 80%;
+        padding-left: 20px;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: darkgray;
+        margin-bottom: 20px;
+        .signup{
+            font-weight:bold ;
+            background: #ff8d69;
+            height: 100%;
+            padding: 15px 10%;
+            color: white;
+            
+            
+        }
+    }
+}
+.contentPreviousNext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+    .contentPrevious{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contentNext{
+        border-left: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        color: black;
+        span{
+            text-align: right;
+        }
+    }
+            .descrLien{
+                a{
+                    color: lightgray;
+                    font-size: 0.6em;
+                    text-transform: uppercase;
+    
+                }
+            }
+            .lien{
+                padding: 0 !important;
+                a{
+                    color: rgb(109, 108, 108);
+                    font-weight: bold;
+                    font-size: 0.8em
+                }
+               
+            }
+}
+
+
+.farmerDogSingle{
+    display: flex;
+    margin: 30px 0;
+    .logoFarmerSingle{
+        margin: auto;
+            font-size: 5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 30px;
+            color: white;
+            background: #ff8d69;
+            border-radius: 50%;
+            
+    }
+    h3{
+        font-size: 1em;
+        font-weight: bold;
+    }
+    p{
+        font-size: 0.8em;
+    }
+}
+
+.allMightyLike{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    .contentImgTitle{
+        height: 300px;
+        a{
+            color: black;
+        }
+        
+    }
+    .imageLike{
+        // margin-left: 5px;
+        height: 80%;
+        img{
+            &:nth-child(1){
+                margin-left: 0;
+                padding-left: 0;
+            }
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.post-comments{
+    margin-top: 100px;
+}
+.comment-respond{
+    .comment-form-comment{
+
+        .textarea{
+            padding: 0 !important;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    h5{
+        color: black;
+        text-transform: uppercase;
+        font-size:0.6em;
+        font-weight:bold;
+    }
+    .commentNameEmail{
+        display: flex;
+        .comment-form-author{
+            padding: 0 !important;
+        }
+        .comment-form-url{
+            padding: 0 !important;
+        }
+        
+    }
+    .submitForm{
+        input{
+            content: "leave a coment";
+            padding: 15px 15px;
+            text-transform: uppercase;
+            font-size:0.8em;
+            font-weight:bold;
+            color: white;
+            background: black;
+            border: 2px solid white !important;
+        }
+    }
+}
