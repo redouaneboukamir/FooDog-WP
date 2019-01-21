@@ -1,3 +1,4 @@
+
 <?php
     function register_my_menus() {
         register_nav_menus(
@@ -9,12 +10,9 @@
         );
     }
     add_action( 'init', 'register_my_menus' );
-
     add_theme_support('post-thumbnails');
     // $src = wp_get_attachment_image_src(get_post_thumbnail_id());
     // add_image_size($small, 300,300);
-
-
     //css files
     function fooDog_enqueue_styles(){
         wp_enqueue_style('css_fontawesome', get_template_directory_uri()."/assets/css/all.css");
@@ -81,45 +79,5 @@ function modify_comment_form_fields($fields){
     
     return $fields;
 }
-// add_filter('comment_form_default_fields','modify_comment_form_fields');
-
-// if ( function_exists('register_sidebar') )
-//   register_sidebar(array(
-//     'name' => 'Name of Widgetized Area',
-//     'before_widget' => '<div class = "widgetizedArea">',
-//     'after_widget' => '</div>',
-//     'before_title' => '<h3>',
-//     'after_title' => '</h3>',
-//   )
-// );
-function header_widgets_init() {
- 
-    register_sidebar( array(
-   
-    'name' => 'Search',
-    'id' => 'new-widget-area',
-    'before_widget' => '<div class="nwa-widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<h2 class="nwa-title">',
-    'after_title' => '</h2>',
-    ) );
-   }
-   
-   add_action( 'widgets_init', 'header_widgets_init' );
-function my_search_form( $form ) {
-    $form = '<form role="search" method="get" id="searchform" class="searchform search-widget" action="' . home_url( '/' ) . '" >
-    <div class="contentFormSearch"><label class="screen-reader-text" for="s">' . __( '' ) . '</label>
-    <input class="champRecherche" type="text" value="' . get_search_query() . '" name="s" id="s" />
-    <input class="submitRecherche" type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
-    </div>
-    </form>';
-
-    return $form;
-}
-
-add_filter( 'get_search_form', 'my_search_form', 100 );
-
- 
-
-
+add_filter('comment_form_default_fields','modify_comment_form_fields');
 ?>

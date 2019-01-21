@@ -1,5 +1,6 @@
+
 <?php get_header(); ?>
-    <!-- <div class="contentAllSingle col-12"> -->
+    <!-- <div class=contentAllSingle> -->
         <div class="mainSingle container col-lg-10 col-sm-12 col-xs-12">
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
@@ -96,36 +97,34 @@
                                     'fields' => apply_filters(
                                         'comment_form_default_fields', array(
                                             'comment_field' => '<p class="comment-form-comment col-12">' .
-                                        // '<label for="comment">' . __( 'Let us know what you have to say:' ) . '</label>' .
+                                        '<label for="comment">' . __( 'Let us know what you have to say:' ) . '</label>' .
                                         '<textarea class="descriComentForm col-12" id="comment" name="comment" placeholder="Write your comment here .." cols="45" rows="8" aria-required="true"></textarea>' .
                                         '</p>',
                                         '<div class="col-12 contentNameEmail">',
                                         'comment_notes_after' => '',
                                             'author' =>'<input class="col-12" id="author" placeholder="Name.." name="author" type="text" value="' .
                                                 esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />'.
-                                                // '<label for="author">' . __( '' ) . '</label> ' .
+                                                '<label for="author">' . __( '' ) . '</label> ' .
                                                 ( $req ? '<span class="required">*</span>' : '' )  .
                                                 '</p>'
                                                 ,
                                             'email'  => '<p class="comment-form-email col-12">' . '<input id="email" placeholder="Email.." name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
                                                 '" size="30"' . $aria_req . ' />'  .
-                                                // '<label for="email">' . __( '' ) . '</label> ' .
-                                                // ( $req ? '<span class="required">*</span>' : '' ) 
-                                                //  .
+                                                '<label for="email">' . __( '' ) . '</label> ' .
+                                                ( $req ? '<span class="required">*</span>' : '' ) 
+                                                 .
                                                 '</p>',
                                             'url'    => '<p class="comment-form-url col-12">' .
                                              '<input id="url" name="url" placeholder="Website.." type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> ' .
-                                            // '<label for="url">' . __( '', 'domainreference' ) . '</label>' .
+                                            '<label for="url">' . __( '', 'domainreference' ) . '</label>' .
                                                '</p>',
                                                '</div>'
                                         )
                                     ),
                                     
-                                    'title_reply' => '<div class="crunchify-text titreComentForm"> <h5>Leave a response</h5></div>'
+                                    // 'title_reply' => '<div class="crunchify-text titreComentForm"> <h5>Leave a response</h5></div>'
                                 );
-
-
-                            comment_form($args, $post_id) ;
+                            comment_form($args) ;
                             ?> 
 
                     </div>
@@ -133,6 +132,6 @@
             <?php endwhile; ?>
             <?php endif; ?>
     </div>
-    <!-- <div class="contentPub col-2">test</div>
-</div> -->
+    <div class="contentPub col-2">test</div>
+<!-- </div> -->
 <?php get_footer(); ?>
