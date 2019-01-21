@@ -17,7 +17,7 @@ if (have_posts()) : ?>
     <h6 class="col-3">lastest posts</h6>
     <div class="borderLastestPost col-lg-9 col-sm-10 col-xs-12"></div>
 </div>
-    <div class="contentAllArticle col-8">
+    <div class="contentAllArticle col-lg-8 col-10">
         <?php while (have_posts()) : the_post(); ?>
         
             <div class="contentArticle row col-lg-6 col-sm-10 col-xs-12"> 

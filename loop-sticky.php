@@ -14,13 +14,13 @@
                 $recentPosts->query($args);
                 $i = 0;
                 ?>
-                <div class="headerPost row col-8">
+                <div class="headerPost row col-lg-8 col-10">
                             <h6 class="col-3">Featured posts</h6>
                             <div class="borderHeaderPost col-9"></div>
                 </div>
                 <div class="contentAllStickyPub container">
                     
-                    <div class="contentAllStickyPost col-lg-8 col-xs-12 col-sm-10">
+                    <div class="contentAllStickyPost col-lg-8 col-xs-12 col-sm-12">
                     <?php
                     // Boucle sur les sticky post
                     while ( $i < 3 && $recentPosts->have_posts() ) : $recentPosts->the_post();	
@@ -29,14 +29,14 @@
                     <div class="contentStickyPost ">
                         
                             <div class="stickyPost row"> 
-                                <figure class="imageSticky col-5"><?php 
+                                <figure class="imageSticky col-lg-5 col-10"><?php 
                                 if(has_post_thumbnail()){
                                     
                                     the_post_thumbnail();
                                 }
                                 
                                 ?></figure>
-                                <div class="contentArticleSticky col-7">
+                                <div class="contentArticleSticky col-lg-7 col-sm-9 col-xs-12">
                                     <span class="categorySticky"><?php the_category();?> </span>
                                     <a href="<?php the_permalink()?>"><?php  the_title($before,$after);?></a>
                                     <?php 
@@ -55,7 +55,7 @@
                         </div>
                         <?php endwhile;?>
                     </div>
-                    <div class="pubSticky col-3">
+                    <div class="pubSticky col-lg-3 col-12">
                         <div class="contentSociaux col-12">
                             <div class="facebookSlide col-12">
                             <i class="fab fa-facebook-f"></i>

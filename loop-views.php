@@ -19,11 +19,13 @@
            
             ?>
                 <div class="firstArticleView row col-lg-6 col-xs-12 col-sm-10">
+                    <div class="col-12">
                     <figure class="imgFirstView"> <a href="<?php the_permalink()?>"><?php the_post_thumbnail(); ?></a></figure>
                     <div class="ensembleCategoryTitre">
                         <span class="categoryView"><?php the_category(); ?></span>
                         <span class="titleFirstView"><a href="<?php the_permalink()?>"><?php the_title(); ?></a></span>
                     </div>
+        </div>
                 </div>
                 <?php   endwhile;?>
                 <div class="content4ArticleViews row col-lg-6 col-xs-12 col-sm-10"> 
