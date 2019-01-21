@@ -46,5 +46,80 @@
         return 20;
     }
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+    // Modify comments header text in comments
+add_filter( 'genesis_title_comments', 'child_title_comments');
+function child_title_comments() {
+    return __(comments_number( '<h3>No Responses</h3>', '<h3>1 Response</h3>', '<h3>% Responses...</h3>' ), 'genesis');
+}
+ 
+// Unset URL from comment form
+function crunchify_move_comment_form_below( $fields ) { 
+    $comment_field = $fields['comment']; 
+    unset( $fields['comment'] ); 
+    $fields['comment'] = $comment_field; 
+    return $fields; 
+} 
+add_filter( 'comment_form_fields', 'crunchify_move_comment_form_below' ); 
+ 
+// Add placeholder for Name and Email
+function modify_comment_form_fields($fields){
+    $fields['author'] = '<div class="commentNameEmail"><p class="comment-form-author  col-4">' . '<input class="col-12" id="author" placeholder="Name.." name="author" type="text" value="' .
+                esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />'.
+                '<label for="author">' . __( "" ) . '</label> ' .
+                ( $req ? '<span class="required">*</span>' : '' )  .
+                '</p>';
+    $fields['email'] = '<p class="comment-form-email  col-4">' . '<input class="col-12" id="email" placeholder="Email.." name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+                '" size="30"' . $aria_req . ' />'  .
+                '<label for="email">' . __( '' ) . '</label> ' .
+                ( $req ? '<span class="required">*</span>' : '' ) 
+                 .
+                '</p>';
+    $fields['url'] = '<p class="comment-form-url col-4" >' .
+             '<input id="url" name="url" placeholder="Website.." class="col-12" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> ' .
+            '<label for="url">' . __( '', 'domainreference' ) . '</label>' .
+               '</p> </div>';
+    
+    return $fields;
+}
+// add_filter('comment_form_default_fields','modify_comment_form_fields');
+
+// if ( function_exists('register_sidebar') )
+//   register_sidebar(array(
+//     'name' => 'Name of Widgetized Area',
+//     'before_widget' => '<div class = "widgetizedArea">',
+//     'after_widget' => '</div>',
+//     'before_title' => '<h3>',
+//     'after_title' => '</h3>',
+//   )
+// );
+function header_widgets_init() {
+ 
+    register_sidebar( array(
+   
+    'name' => 'Search',
+    'id' => 'new-widget-area',
+    'before_widget' => '<div class="nwa-widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2 class="nwa-title">',
+    'after_title' => '</h2>',
+    ) );
+   }
+   
+   add_action( 'widgets_init', 'header_widgets_init' );
+function my_search_form( $form ) {
+    $form = '<form role="search" method="get" id="searchform" class="searchform search-widget" action="' . home_url( '/' ) . '" >
+    <div class="contentFormSearch"><label class="screen-reader-text" for="s">' . __( '' ) . '</label>
+    <input class="champRecherche" type="text" value="' . get_search_query() . '" name="s" id="s" />
+    <input class="submitRecherche" type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
+    </div>
+    </form>';
+
+    return $form;
+}
+
+add_filter( 'get_search_form', 'my_search_form', 100 );
+
+ 
+
 
 ?>

@@ -208,6 +208,69 @@ Text Domain: FooDog-WP
         color: lightgray;
         text-transform: uppercase;
         font-size: 0.8em; }
+  margin-top: 20px;
+}
+
+.contentStickyPost .stickyPost {
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentStickyPost .stickyPost .imageSticky {
+  height: 200px;
+}
+
+.contentStickyPost .stickyPost .imageSticky:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contentStickyPost .stickyPost .imageSticky img {
+  width: 100%;
+  height: 100%;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky a {
+  text-decoration: none;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky .categorySticky {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky .categorySticky .post-categories {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky .categorySticky .post-categories li {
+  padding-left: 5px;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky .categorySticky .post-categories li a {
+  color: #ff8d69;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky .titleSticky {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.contentStickyPost .stickyPost .contentArticleSticky .titleSticky:hover {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 7px solid #ff8d69;
+}
 
 .pubSticky .contentSociaux i, .pubSticky .contentSociaux span {
   padding-left: 10px; }
@@ -334,6 +397,8 @@ Text Domain: FooDog-WP
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -410,6 +475,8 @@ Text Domain: FooDog-WP
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 60px 0;
 }
 
@@ -500,7 +567,7 @@ Text Domain: FooDog-WP
 }
 
 .contentSociauxComment .commentPinterest {
-  padding: 5px 25px;
+  padding: 5px 15px;
   font-size: 0.8em;
   text-transform: uppercase;
   color: white;
@@ -570,12 +637,176 @@ Text Domain: FooDog-WP
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+}
+
+.contentPreviousNext .contentPrevious {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contentPreviousNext .contentNext {
+  border-left: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: black;
+}
+
+.contentPreviousNext .contentNext span {
+  text-align: right;
+}
+
+.contentPreviousNext .descrLien a {
+  color: lightgray;
+  font-size: 0.6em;
+  text-transform: uppercase;
+}
+
+.contentPreviousNext .lien {
+  padding: 0 !important;
+}
+
+.contentPreviousNext .lien a {
+  color: #6d6c6c;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.farmerDogSingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
+}
+
+.farmerDogSingle .logoFarmerSingle {
+  margin: auto;
+  font-size: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 30px;
+  color: white;
+  background: #ff8d69;
+  border-radius: 50%;
+}
+
+.farmerDogSingle h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.farmerDogSingle p {
+  font-size: 0.8em;
+}
+
+.allMightyLike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.allMightyLike .contentImgTitle {
+  height: 300px;
+}
+
+.allMightyLike .contentImgTitle a {
+  color: black;
+}
+
+.allMightyLike .imageLike {
+  height: 80%;
+}
+
+.allMightyLike .imageLike img {
+  width: 100%;
+  height: 100%;
+}
+
+.allMightyLike .imageLike img:nth-child(1) {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.post-comments {
+  margin-top: 100px;
+}
+
+.comment-respond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comment-respond h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+.comment-respond .commentNameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-respond .commentNameEmail .comment-form-author {
+  padding: 0 !important;
+}
+
+.comment-respond .commentNameEmail .comment-form-url {
+  padding: 0 !important;
+}
+
+.comment-respond .submitForm input {
+  content: "leave a coment";
+  padding: 15px 15px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  background: black;
+  border: 2px solid white !important;
 }
 
 .latestPost {
@@ -1009,6 +1240,31 @@ footer {
   margin-top: 20px;
   margin-bottom: 50px; }
 
+.contentShare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contentShare .shareIcon {
+  border: 1px solid lightgray;
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+
+.contentShare .shareText {
+  padding-left: 5px;
+  color: lightgray;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
 .fooDog_pop_up {
   display: none;
   width: 100%;
@@ -1065,6 +1321,53 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
-  padding: 10px; }
-  .header .fooDog_mainNav .fooDog_mainNavList li a {
-    color: black; }
+  padding: 10px;
+}
+
+.header .fooDog_mainNav .fooDog_mainNavList li a {
+  color: black;
+}
+
+.search-widget {
+  position: absolute;
+  -webkit-transform: translate(50vh, 50vh);
+          transform: translate(50vh, 50vh);
+  display: none;
+}
+
+.search-widget .contentFormSearch {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background: lightgray;
+  padding: 0px 30px;
+}
+
+.search-widget .champRecherche {
+  width: 20em;
+}
+
+.search-widget .submitRecherche {
+  margin-left: 1em;
+  width: 10em;
+  background: #3f3f3f;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.search-widget input {
+  border: 1px solid #757575;
+  height: 3em;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */
