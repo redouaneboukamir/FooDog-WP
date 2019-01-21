@@ -102,20 +102,20 @@
                                         '</p>',
                                         '<div class="col-12 contentNameEmail">',
                                         'comment_notes_after' => '',
-                                            'author' =>'<input class="col-12" id="author" placeholder="Name.." name="author" type="text" value="' .
+                                            'author' =>'<p class="comment-form-author col-4"><input  class="col-12" id="author" placeholder="Name.." name="author" type="text" value="' .
                                                 esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />'.
                                                 '<label for="author">' . __( '' ) . '</label> ' .
                                                 ( $req ? '<span class="required">*</span>' : '' )  .
                                                 '</p>'
                                                 ,
-                                            'email'  => '<p class="comment-form-email col-12">' . '<input id="email" placeholder="Email.." name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+                                            'email'  => '<p class="comment-form-email col-4">' . '<input class="col-12" id="email" placeholder="Email.." name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
                                                 '" size="30"' . $aria_req . ' />'  .
                                                 '<label for="email">' . __( '' ) . '</label> ' .
                                                 ( $req ? '<span class="required">*</span>' : '' ) 
                                                  .
                                                 '</p>',
-                                            'url'    => '<p class="comment-form-url col-12">' .
-                                             '<input id="url" name="url" placeholder="Website.." type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> ' .
+                                            'url'    => '<p class="comment-form-url col-4">' .
+                                             '<input class="col-12" id="url" name="url" placeholder="Website.." type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> ' .
                                             '<label for="url">' . __( '', 'domainreference' ) . '</label>' .
                                                '</p>',
                                                '</div>'

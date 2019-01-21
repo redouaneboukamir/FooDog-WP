@@ -6,9 +6,8 @@
 
 $('#searchMenu').click(function(){
 
-    
     $("#searchform").show();
+    // $('#body').css('opacity','0.5');
+    // $(".search-widget").css('opacity',"inherit");
 
-
-
-})
+});
