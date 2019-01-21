@@ -6,7 +6,7 @@
 
 $('#searchMenu').click(function(){
 
-    console.log("helo");
+    
     $("#searchform").show();
 
 

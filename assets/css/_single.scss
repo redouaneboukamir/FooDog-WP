@@ -301,6 +301,12 @@
     margin-top: 100px;
 }
 .comment-respond{
+    .comment-form-comment{
+
+        .textarea{
+            padding: 0 !important;
+        }
+    }
     display: flex;
     flex-direction: column;
     h5{

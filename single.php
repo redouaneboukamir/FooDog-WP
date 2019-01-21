@@ -97,7 +97,7 @@
                                     'fields' => apply_filters(
                                         'comment_form_default_fields', array(
                                             'comment_field' => '<p class="comment-form-comment col-12">' .
-                                        '<label for="comment">' . __( 'Let us know what you have to say:' ) . '</label>' .
+                                        '<label for="comment">' . __( '' ) . '</label>' .
                                         '<textarea class="descriComentForm col-12" id="comment" name="comment" placeholder="Write your comment here .." cols="45" rows="8" aria-required="true"></textarea>' .
                                         '</p>',
                                         '<div class="col-12 contentNameEmail">',
