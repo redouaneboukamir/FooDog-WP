@@ -31,8 +31,13 @@
 }//.fooDog_social
 
 .fooDog_content_header{
-    max-width: 75%;
+    width: 75%;
     margin: auto;
+}
+@media only screen and (max-width:992px){
+    .fooDog_content_header{
+        width:100%;
+    }
 }
 
 .header{
