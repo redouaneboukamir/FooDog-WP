@@ -11,3 +11,8 @@ $('#searchMenu').click(function(){
     // $(".search-widget").css('opacity',"inherit");
 
 });
+$('#Exit').click(function(){
+
+$('#searchform').hide();
+
+});

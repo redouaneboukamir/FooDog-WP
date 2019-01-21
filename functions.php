@@ -105,7 +105,9 @@ function header_widgets_init() {
    add_action( 'widgets_init', 'header_widgets_init' );
 function my_search_form( $form ) {
     $form = '<form role="search" method="get" id="searchform" class="searchform search-widget" action="' . home_url( '/' ) . '" >
-    <div class="contentFormSearch"><label class="screen-reader-text" for="s">' . __( '' ) . '</label>
+    <div class="contentFormSearch">
+    <a href=""><p class="Exit" id="Exit">X</p></a>
+    <label class="screen-reader-text" for="s">' . __( '' ) . '</label>
     <input class="champRecherche" type="text" value="' . get_search_query() . '" name="s" id="s" />
     <input class="submitRecherche" type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
     </div>

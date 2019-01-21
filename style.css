@@ -1010,14 +1010,15 @@ footer {
 }
 
 .search-widget {
-  position: absolute;
   display: none;
   margin: auto;
   height: 100vh;
   width: 100vw;
+  position: absolute;
   background: rgba(211, 211, 211, 0.5);
 }
 .search-widget .contentFormSearch {
+  position: relative;
   margin: auto;
   margin-top: 30vh;
   height: 200px;
@@ -1028,6 +1029,13 @@ footer {
   border: 1px solid #9e9d9d;
   background: white;
   padding: 0px 30px;
+}
+.search-widget .contentFormSearch .Exit {
+  position: absolute;
+  color: orangered;
+  text-decoration: none;
+  top: 0vh;
+  right: 2vh;
 }
 .search-widget .champRecherche {
   width: 20em;
