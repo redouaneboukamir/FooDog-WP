@@ -46,8 +46,8 @@ if ($CategoryPost->have_posts()): while ($CategoryPost->have_posts()): $Category
         the_excerpt();
         ?>
 						<div class="contentShareCat">
-								                                        <span class="shareIcon"><i class="fas fa-share"></i></span>
-								                                        <span class="shareText">Share</span>
+								                                        <span class="shareIconCat"><i class="fas fa-share"></i></span>
+								                                        <span class="shareTextCat">Share</span>
 								                                    </div>
 										                                        </div>
 										                                    </div>
@@ -67,9 +67,11 @@ if ($CategoryPost->have_posts()): while ($CategoryPost->have_posts()): $Category
 					                            <div class="instaSlide col-12">
 					                            <i class="fab fa-instagram"></i>
 					                                    <span>Instagram</span>
-					                            </div>
+												</div>
+												<div class="col-12">
+													<img class="img-fluid" src="https://www.wanimo.com/images/alimentation_pour_chien/A/00/A00EK07/500x500/01/royal-canin-breed-nutrition-shih-tzu.jpg" alt="Pub pour de la nourrture pour chien">
+												</div>
 					                        </div>
-					                        <figure><img src=""></figure>
 					                    </div>
 					    </div>
 					    <?php endif;?>

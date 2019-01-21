@@ -18,7 +18,7 @@
     function fooDog_enqueue_styles(){
         wp_enqueue_style('css_fontawesome', get_template_directory_uri()."/assets/css/all.css");
         wp_enqueue_style('css_bootstrap', get_template_directory_uri()."/assets/css/bootstrap.min.css");
-        wp_enqueue_style('css_style', get_template_directory_uri()."/style.css");
+        wp_enqueue_style('css_style', get_template_directory_uri()."/assets/css/style.css");
     }
     add_action('enqueue_styles', fooDog_enqueue_styles());
     //js files
