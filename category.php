@@ -1,28 +1,37 @@
-<?php 
-    
-get_header();?>
+<?php get_header();?>
+
 <!-- <div class="contentAllAll"> -->
-    <span class="titleCat col-12"><h2><?php single_cat_title();?></h2></span>
-    <div class="contentAllCategoryPub container">
+<div class="contentAllCategoryPub container">
         <div class="contentAllCategoryPost col-8">
     <?php
-    if (have_posts()) :
-            while (have_posts()) : the_post(); 
-            ?>
+    //setup pour la pagination avec WP_Query (permet aussi de configurer les articles à afficher comme l'ordre, le nombre d'article maximum, ect...)
+    $pageCat = get_query_var("paged");
 
+    $CategoryPost_args = array (
+        "posts_per_page" => 8,
+        "paged" => $pageCat,
+        "orderby" => "date",
+        //"category_name" => the_category(),
+        "order"   => "DESC"
+    );
+    $CategoryPost = new WP_Query($CategoryPost_args);
+    //fin de setup de la pagination 
+    if ($CategoryPost->have_posts()) : while ($CategoryPost->have_posts()) : $CategoryPost->the_post(); 
+    ?>
         <!-- Ensemble du traitement et affichage de stickypost -->
         <?php 
                     $before = '<h4 class="titleCategory">';
                     $after = "</h4>";
                     ?>
-                    
                             <div class="contentCategoryPost ">
-                                
                                     <div class="categoryPost row"> 
                                         <figure class="imageCategory col-5"><?php 
                                         if(has_post_thumbnail()){
                                             
                                             the_post_thumbnail();
+                                        }
+                                        else{ //Place automatiquement un thumbnail, si aucun ne sont présent
+                                            echo('<img src="https://news.nationalgeographic.com/content/dam/news/2018/05/29/dog-baby-talk/01-dog-baby-talk-NationalGeographic_2283205.ngsversion.1527786004161.adapt.1900.1.jpg" alt="">');
                                         }
                                         
                                         ?></figure>
@@ -40,11 +49,8 @@ get_header();?>
                                         <span class="shareText">Share</span>
                                     </div>
                                         </div>
-                                    </div>
-                                    
+                                    </div>       
                             </div>
-                            
-                            
                             <?php endwhile;?>
                         </div>
                         <div class="pubCategory col-3">
@@ -64,11 +70,25 @@ get_header();?>
                         </div>
                         <figure><img src=""></figure>
                     </div>
+                    <div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
+                    <div class="nav-next alignright"><?php next_posts_link( 'Newer posts' ); ?></div>  
+    </div>          
+    <?php endif;?>
+    <div class="contentPagination col-lg-8">
+        <span class="pagination col-12">
+            <?php
+            //pagination 
+            //$paginationCat créer les arguments
+        $paginationCat = array(
+            "prev_text" => __("<"),
+            "next_text" => __(">"),
+            );
+            //echo la pagination avec les arguments setup préalablement
+            echo paginate_links($paginationCat);
+            ?>
 
-                        
-    </div>
+        </span>
+<?php get_footer(); ?>
 
-    <?php endif; get_footer();?>
     <!-- <div class="col-2">fzesv</div> -->
-<!-- </div> -->
-                            
+<!-- </div> -->                      

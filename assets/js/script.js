@@ -1,8 +1,12 @@
-// function search_pop_up(){
-//     document.getElementById('fooDog_pop_up').style.display="block";
-// }
+/*
+let popup = document.getElementById('fooDog_pop_up');
+function search_pop_up(){
+    document.getElementById('fooDog_pop_up').style.display="block";
+}
 
-// document.getElementById('search_button').addEventListener('click', search_pop_up());
+function hide_pop_up(){
+    document.getElementById('fooDog_pop_up').style.display="none";
+}*/
 
 $('#searchMenu').click(function(){
 
