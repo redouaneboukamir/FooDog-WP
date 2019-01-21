@@ -514,26 +514,29 @@ Text Domain: FooDog-WP
   margin-top: 100px;
 }
 
-.comment-respond {
+.comment-form {
   display: flex;
   flex-direction: column;
 }
-.comment-respond h5 {
+.comment-form .contentNameEmail {
+  display: flex;
+}
+.comment-form .contentNameEmail .comment-form-author {
+  padding: 0 !important;
+}
+.comment-form .contentNameEmail .comment-form-url {
+  padding: 0 !important;
+}
+.comment-form .contentNameEmail .textarea {
+  padding: 0 !important;
+}
+.comment-form h5 {
   color: black;
   text-transform: uppercase;
   font-size: 0.6em;
   font-weight: bold;
 }
-.comment-respond .commentNameEmail {
-  display: flex;
-}
-.comment-respond .commentNameEmail .comment-form-author {
-  padding: 0 !important;
-}
-.comment-respond .commentNameEmail .comment-form-url {
-  padding: 0 !important;
-}
-.comment-respond .submitForm input {
+.comment-form .submitForm input {
   content: "leave a coment";
   padding: 15px 15px;
   text-transform: uppercase;
