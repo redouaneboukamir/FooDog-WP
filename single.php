@@ -24,9 +24,9 @@ get_header();
                                 <span class="commentFarmer"><i class="fas fa-comment"></i>comment</span>
                                 <span class="shareFarmer">share </span>
                                 <span class="sociauxFarmer">
-                                    <div class="farmerFacebook"><i class="fab fa-facebook-f"></i></div>
-                                    <div class="farmerTwitter"><i class="fab fa-twitter"></i></div>
-                                    <div class="farmerPinterest"><i class="fab fa-pinterest-p"></i></div>
+                                    <span class="farmerFacebook"><i class="fab fa-facebook-f"></i></span>
+                                    <span class="farmerTwitter"><i class="fab fa-twitter"></i></span>
+                                    <span class="farmerPinterest"><i class="fab fa-pinterest-p"></i></span>
                                 </span>
                             </div>
                         </div>
