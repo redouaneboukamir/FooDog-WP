@@ -1,6 +1,7 @@
 <?php get_header();?>
 
 <!-- <div class="contentAllAll"> -->
+<span class="titleCat col-12"><h2><?php single_cat_title();?></h2></span>
 <div class="contentAllCategoryPub container">
         <div class="contentAllCategoryPost col-8">
     <?php
