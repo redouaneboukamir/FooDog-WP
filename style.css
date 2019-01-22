@@ -765,6 +765,36 @@ Text Domain: FooDog-WP
   flex-direction: column;
 }
 
+.pubCategory .contentSociaux i, .pubCategory .contentSociaux span {
+  padding-left: 10px;
+}
+.pubCategory .contentSociaux .facebookSlide {
+  background: #899cce;
+  padding: 10px 0;
+  color: white;
+  margin-bottom: 5px;
+}
+.pubCategory .contentSociaux .facebookSlide:hover {
+  background: #262c3d;
+}
+.pubCategory .contentSociaux .twitterSlide {
+  background: #60d1f5;
+  padding: 10px 0;
+  color: white;
+  margin-bottom: 5px;
+}
+.pubCategory .contentSociaux .twitterSlide:hover {
+  background: #262c3d;
+}
+.pubCategory .contentSociaux .instaSlide {
+  color: white;
+  background: #709bbf;
+  padding: 10px 0;
+}
+.pubCategory .contentSociaux .instaSlide:hover {
+  background: #262c3d;
+}
+
 .contentCategoryPost {
   margin-top: 20px;
   display: flex;
