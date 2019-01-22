@@ -121,9 +121,10 @@ $couleurOrange : #ff8d69;
     .search-widget{
         display: none;
         margin: auto;
+        margin-top: 0;
         height: 100vh;
         width: 100vw;
-        position: absolute;
+        position: fixed;
         background:rgba(211, 211, 211,0.5);
         
         .contentFormSearch{
