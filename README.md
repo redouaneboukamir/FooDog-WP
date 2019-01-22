@@ -1,4 +1,4 @@
-# FooDog-WP
+﻿# FooDog-WP
 
 Maxime Huet: La tâche que j'avais à éffectuer était le footer.
              J'ai commencé par faire les couleur fonds et les réseaux sociaux,
@@ -8,3 +8,4 @@ Maxime Huet: La tâche que j'avais à éffectuer était le footer.
              
 Maxime Christiaens : Category.php & _category.css
 
+Valentin Beaufays: Header.php & _header.scss
