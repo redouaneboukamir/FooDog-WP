@@ -13,3 +13,7 @@ Valentin Beaufays: Header.php & _header.scss
 Boukamir Redouane : functions.php,index.php, loop-sticky.php, loop-views.php, loop.php, search.php, single.php.
 _loop-views.scss, _loop.scss, _search.scss, _single.scss, _stickyPost.scss, style.scss.
 Afficher et masquer le searchForm en JS.
+
+<img src="./assets/FooDogAccueil.png">
+<img src="./assets/FooDogCat.png">
+<img src="./assets/FooDogSearch.png">
