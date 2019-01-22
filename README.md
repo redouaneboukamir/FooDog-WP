@@ -5,3 +5,6 @@ Maxime Huet: La tâche que j'avais à éffectuer était le footer.
              Ensuite j'ai fais un menu pour mes catégories.
              Une boucle à été créer pour générer mes articles populaires.
              Et j'ai terminer avec le widget pour instagram. 
+             
+Maxime Christiaens : Category.php & _category.css
+
