@@ -1,5 +1,6 @@
 
 <?php get_header(); ?>
+<?php wp_nav_menu(array('theme_location' => 'single-menu', 'menu_class' => 'SingleMenu')); ?>
     <!-- <div class=contentAllSingle> -->
         <div class="mainSingle container col-lg-10 col-sm-12 col-xs-12">
             <?php if (have_posts()) : ?>

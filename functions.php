@@ -5,7 +5,8 @@
             array(
                 'fooDog_socialNavList' => 'social networks',
                 'fooDog_mainNavList' => 'main navbar',
-                'footer-menu' => 'Footer menu'
+                'footer-menu' => 'Footer menu',
+                'single-menu' => 'Single menu',
             )
         );
     }
