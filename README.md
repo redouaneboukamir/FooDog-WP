@@ -9,3 +9,5 @@ Maxime Huet: La tâche que j'avais à éffectuer était le footer.
 Maxime Christiaens : Category.php & _category.css
 
 Valentin Beaufays: Header.php & _header.scss
+
+Boukamir Redouane : functions.php,index.php, loop-sticky.php, loop-views.php, loop.php, search.php, single.php.
