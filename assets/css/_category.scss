@@ -122,3 +122,33 @@ $couleurOrange : rgb(255, 141, 105);
     text-transform: uppercase!important;
     font-size: 0.8em!important;
 }
+.pubButtonCat{
+    color: white!important;
+    background-color: rgb(255, 141, 105)!important;
+    border: 0px solid black!important;
+    padding-left:2vh;
+    padding-right:2vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    margin-bottom: 2vh;
+}
+.catCircle{
+    background-color: rgb(255, 141, 105)!important;
+    color: white!important;
+    border: 0.5px rgb(255, 141, 105)!important;
+    border-radius: 50%!important;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    p{
+        margin-top: 20%;
+        transform: rotate(20deg);
+    }
+}
+.catText-1{
+    font-weight: bold!important;
+    color: #363232de!important;
+}
+.catText-2{
+    color: #867b7bde!important;
+}

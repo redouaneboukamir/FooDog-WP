@@ -51,7 +51,7 @@ if (has_post_thumbnail()) {
 	</div>
 	<?php endwhile;?>
 	</div>
-	<div class="pubCategory col-4 col-md-4">
+	<div class="pubCategory col-5 col-md-4">
 		<div class="contentSociaux col-12">
 			<div class="facebookSlide col-12">
 				<i class="fab fa-facebook-f"></i>
@@ -67,7 +67,18 @@ if (has_post_thumbnail()) {
 			</div>
 			<div class="col-12">
 				<img class="img-fluid" src="https://www.wanimo.com/images/alimentation_pour_chien/A/00/A00EK07/500x500/01/royal-canin-breed-nutrition-shih-tzu.jpg" alt="Pub pour de la nourrture pour chien">
-			</div>
+            </div>
+            <div class="col-12 col-md-6 offset-md-3">
+                <button class="pubButtonCat">Try Now</button>
+            </div>
+            <div class="col-12 row ">
+                <div class="catCircle col-12 col-md-5 d-flex align-items-center"><p>THE FAMERS DOG</p></div>
+                <div class="catText-1 col-12 col-md-7">REAL PET FOOD MADE FRESH DELIVERED</div>
+            </div>
+            <div class="col-12 row">
+                <div class="col-6"></div>
+                <div class="catText-2 col-6"><p>*Cute Dog not include</p></div>
+            </div>
 		</div>
 	</div>
 </div>
