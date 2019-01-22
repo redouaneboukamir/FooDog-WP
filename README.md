@@ -16,10 +16,14 @@ Afficher et masquer le searchForm en JS.
 
 # Image D'acceuil
 ------------------
+
 <img src="./assets/FooDogAccueil.png">
+
 # Image De categorie
 ------------------
+
 <img src="./assets/FooDogCat.png">
+
 # Image De Search
 ------------------
 <img src="./assets/FooDogSearch.png">
