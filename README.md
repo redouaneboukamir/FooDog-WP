@@ -11,3 +11,5 @@ Maxime Christiaens : Category.php & _category.css
 Valentin Beaufays: Header.php & _header.scss
 
 Boukamir Redouane : functions.php,index.php, loop-sticky.php, loop-views.php, loop.php, search.php, single.php.
+_loop-views.scss, _loop.scss, _search.scss, _single.scss, _stickyPost.scss, style.scss.
+Afficher et masquer le searchForm en JS.
