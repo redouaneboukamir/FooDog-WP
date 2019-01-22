@@ -1,6 +1,7 @@
 $couleurOrange : rgb(255, 141, 105);
 .contentAllStickyPub{
     display: flex;
+    flex-wrap: wrap;
 }
 .headerPost{
     h6{
@@ -100,3 +101,10 @@ $couleurOrange : rgb(255, 141, 105);
         }
     }
 }
+        .widgetPub{
+            margin-top: 20px;
+            img{
+    
+                width: 100%;
+            }
+        }

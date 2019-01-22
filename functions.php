@@ -5,7 +5,8 @@
             array(
                 'fooDog_socialNavList' => 'social networks',
                 'fooDog_mainNavList' => 'main navbar',
-                'footer-menu' => 'Footer menu'
+                'footer-menu' => 'Footer menu',
+                'single-menu' => 'Single menu',
             )
         );
     }
@@ -79,5 +80,67 @@ function modify_comment_form_fields($fields){
     
     return $fields;
 }
-add_filter('comment_form_default_fields','modify_comment_form_fields');
+// add_filter('comment_form_default_fields','modify_comment_form_fields');
+// if ( function_exists('register_sidebar') )
+//   register_sidebar(array(
+//     'name' => 'Name of Widgetized Area',
+//     'before_widget' => '<div class = "widgetizedArea">',
+//     'after_widget' => '</div>',
+//     'before_title' => '<h3>',
+//     'after_title' => '</h3>',
+//   )
+// );
+function my_search_form( $form ) {
+    $form = '<form role="search" method="get" id="searchform" class="searchform search-widget" action="' . home_url( '/' ) . '" >
+    <div class="contentFormSearch">
+    <a href=""><p class="Exit" id="Exit">X</p></a>
+    <label class="screen-reader-text" for="s">' . __( '' ) . '</label>
+    <input class="champRecherche" type="text" value="' . get_search_query() . '" name="s" id="s" />
+    <input class="submitRecherche" type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
+    </div>
+    </form>';
+    return $form;
+}
+add_filter( 'get_search_form', 'my_search_form', 100 );
+
+
+
+// function notux_widgets_init() {
+ 
+//     register_sidebar( array(
+   
+//     'name' => 'Search',
+//     'id' => 'new-widget-area',
+//     'before_widget' => '<div class="nwa-widget">',
+//     'after_widget' => '</div>',
+//     'before_title' => '<h2 class="nwa-title">',
+//     'after_title' => '</h2>',
+//     ) );
+
+//    add_action( 'widgets_init', 'notux_widgets_init' );
+
+   function notux_widgets_init() { 
+    // Mon widget sur mesure
+    register_sidebar( array(
+   
+        'name' => __( 'Search', 'FooDog-WP' ),
+        'id' => 'new-widget-area',
+        'description'   => __( 'Widget search', 'FooDog-WP' ),
+        'before_widget' => '<div class="nwa-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="nwa-title">',
+        'after_title' => '</h2>',
+        ) );
+        
+        register_sidebar( array(
+            'name'          => __( 'Sidebar', 'FooDog-WP' ),
+            'id'            => 'new-widget-pub',
+            'description'   => __( 'Widget sidebar.', 'FooDog-WP' ),
+            'before_widget' => '<div id="%1$s" class="widgetPub col-12">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="widget-title th3">',
+            'after_title'   => '</div>',
+        ) );
+}
+add_action( 'widgets_init', 'notux_widgets_init' );
 ?>

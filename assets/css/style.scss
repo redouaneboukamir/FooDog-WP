@@ -119,18 +119,34 @@ $couleurOrange : #ff8d69;
 
     }//.header
     .search-widget{
-        position: absolute;
-        transform: translate(50vh,50vh);
         display: none;
+        margin: auto;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        background:rgba(211, 211, 211,0.5);
+        
         .contentFormSearch{
+            .Exit{
+                position: absolute;
+                color: orangered;
+                text-decoration: none;
+                top: 0vh;
+                right: 2vh;
+                
+            }
+            position: relative;
+            margin: auto;
+            margin-top: 30vh;
             height: 200px;
+            width: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            border-radius: 20px;
-            background: lightgray;
+            border: 1px solid rgb(158, 157, 157);
+            background: white;
             padding: 0px 30px;
+            
 
         }
         .champRecherche{
