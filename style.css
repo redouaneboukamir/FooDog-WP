@@ -740,6 +740,10 @@ Text Domain: FooDog-WP
   color: black;
 }
 
+.wrap {
+  word-wrap: break-word;
+}
+
 .titleCat {
   display: flex;
   justify-content: center;
@@ -811,34 +815,17 @@ Text Domain: FooDog-WP
   border-bottom: 7px solid #ff8d69;
 }
 
-.pubCategory .contentSociaux i, .pubCategory .contentSociaux span {
-  padding-left: 10px;
+.shareIconCat {
+  border: 1px solid lightgray !important;
+  padding: 7px 10px !important;
+  border-radius: 50% !important;
 }
-.pubCategory .contentSociaux .facebookSlide {
-  background: #899cce;
-  padding: 10px 0;
-  color: white;
-  margin-bottom: 5px;
-}
-.pubCategory .contentSociaux .facebookSlide:hover {
-  background: #262c3d;
-}
-.pubCategory .contentSociaux .twitterSlide {
-  background: #60d1f5;
-  padding: 10px 0;
-  color: white;
-  margin-bottom: 5px;
-}
-.pubCategory .contentSociaux .twitterSlide:hover {
-  background: #262c3d;
-}
-.pubCategory .contentSociaux .instaSlide {
-  color: white;
-  background: #709bbf;
-  padding: 10px 0;
-}
-.pubCategory .contentSociaux .instaSlide:hover {
-  background: #262c3d;
+
+.shareTextCat {
+  padding-left: 5px !important;
+  color: lightgray !important;
+  text-transform: uppercase !important;
+  font-size: 0.8em !important;
 }
 
 footer {
