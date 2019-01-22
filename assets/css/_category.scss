@@ -3,7 +3,14 @@ $couleurOrange : rgb(255, 141, 105);
 .wrap{
     word-wrap: break-word;
 }
-
+.titleCat{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: rgb(238, 238, 238);
+    color: rgb(100, 100, 100);
+}
 .contentAllCategoryPub{
     display: flex;
     .pubCategory{
